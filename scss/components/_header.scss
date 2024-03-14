@@ -1,0 +1,25 @@
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 35px;
+}
+
+.header__logo-icon {
+  width: 45px;
+  height: 35px;
+  fill: #0e0e0e;
+}
+
+.nav {
+  display: none;
+}
