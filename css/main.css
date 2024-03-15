@@ -259,14 +259,6 @@ ul {
           animation: infinity-rotate 30s linear 4s infinite;
 }
 
-.hero__title {
-  position: absolute;
-  bottom: 0;
-  font-weight: 400;
-  font-size: 52px;
-  text-align: center;
-}
-
 @-webkit-keyframes infinity-rotate {
   from {
     -webkit-transform: rotate(-360deg);
@@ -288,4 +280,21 @@ ul {
             transform: rotate(0);
   }
 }
+.hero__title {
+  position: absolute;
+  bottom: 0;
+  font-weight: 400;
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.hero__text {
+  width: 46px;
+  font-size: 14px;
+  margin-bottom: 0;
+  color: var(--color-main);
+}
+
 /* Layout *//*# sourceMappingURL=main.css.map */
