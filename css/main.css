@@ -1,7 +1,7 @@
 /* Utils */
 :root {
-  --main-color: #000000;
-  --icon-color: #0e0e0e;
+  --color-main: #000000;
+  --color-icon: #0e0e0e;
 }
 
 /* Base */
@@ -206,4 +206,87 @@ ul {
   fill: var(--main-color);
 }
 
+.hero {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.hero__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 320px;
+  min-height: 354px;
+  padding: 44px 0 0 11px;
+}
+
+.hero__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 64px;
+  height: 76px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hero__button-icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.hero__animated {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: infinity-rotate 30s linear 4s infinite;
+          animation: infinity-rotate 30s linear 4s infinite;
+}
+
+.hero__title {
+  position: absolute;
+  bottom: 0;
+  font-weight: 400;
+  font-size: 52px;
+  text-align: center;
+}
+
+@-webkit-keyframes infinity-rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes infinity-rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
 /* Layout *//*# sourceMappingURL=main.css.map */

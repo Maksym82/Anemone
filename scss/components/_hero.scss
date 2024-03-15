@@ -1,0 +1,57 @@
+.hero {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 320px;
+  min-height: 354px;
+  padding: 44px 0 0 11px;
+}
+
+.hero__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 76px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.hero__button-icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.hero__animated {
+  transform-origin: center;
+  animation: infinity-rotate 30s linear 4s infinite;
+}
+
+.hero__title {
+  position: absolute;
+  bottom: 0;
+  font-weight: 400;
+  font-size: 52px;
+  text-align: center;
+}
+
+@keyframes infinity-rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
