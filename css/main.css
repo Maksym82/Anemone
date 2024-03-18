@@ -214,6 +214,11 @@ ul {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .hero {
+    max-width: 1280px;
+  }
+}
 
 .hero__container {
   position: relative;
@@ -234,6 +239,12 @@ ul {
     max-width: 720px;
     min-height: 768px;
     padding: 38px 0 0 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__container {
+    max-width: 1232px;
+    min-height: 793px;
   }
 }
 
@@ -259,6 +270,13 @@ ul {
   .hero__button {
     width: 145px;
     height: 150px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__button {
+    width: 166px;
+    height: 166px;
+    margin-right: 145px;
   }
 }
 
@@ -312,7 +330,40 @@ ul {
     left: 31px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    font-size: 160px;
+    left: 178px;
+    -webkit-animation: move-vertical 1000ms ease-out 1000ms both;
+            animation: move-vertical 1000ms ease-out 1000ms both;
+  }
+}
 
+@-webkit-keyframes move-vertical {
+  from {
+    -webkit-transform: translateX(var(--shift-from-x, 0)) translateY(var(--shift-from-y, 0));
+            transform: translateX(var(--shift-from-x, 0)) translateY(var(--shift-from-y, 0));
+  }
+  to {
+    -webkit-transform: translateX(var(--shift-to-x, 0)) translateY(var(--shift-to-y, 0));
+            transform: translateX(var(--shift-to-x, 0)) translateY(var(--shift-to-y, 0));
+    color: #fff;
+    fill: #fff;
+  }
+}
+
+@keyframes move-vertical {
+  from {
+    -webkit-transform: translateX(var(--shift-from-x, 0)) translateY(var(--shift-from-y, 0));
+            transform: translateX(var(--shift-from-x, 0)) translateY(var(--shift-from-y, 0));
+  }
+  to {
+    -webkit-transform: translateX(var(--shift-to-x, 0)) translateY(var(--shift-to-y, 0));
+            transform: translateX(var(--shift-to-x, 0)) translateY(var(--shift-to-y, 0));
+    color: #fff;
+    fill: #fff;
+  }
+}
 .hero__text {
   width: 46px;
   font-size: 14px;
@@ -324,6 +375,13 @@ ul {
     width: 76px;
     font-size: 24px;
     margin-left: 49px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__text {
+    width: 101px;
+    font-size: 32px;
+    margin-left: 210px;
   }
 }
 
@@ -339,6 +397,11 @@ ul {
 @media screen and (min-width: 768px) {
   .hero__image {
     padding-top: 38px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__image {
+    padding-top: 64px;
   }
 }
 
