@@ -360,6 +360,15 @@ ul {
     -webkit-animation: move-vertical 1000ms ease-out 1000ms both;
             animation: move-vertical 1000ms ease-out 1000ms both;
   }
+  .hero__title::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 21px;
+    width: 58px;
+    height: 7px;
+    background-color: currentColor;
+  }
 }
 
 @-webkit-keyframes move-vertical {

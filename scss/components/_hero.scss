@@ -99,6 +99,16 @@
     font-size: 160px;
     left: 178px;
     animation: move-vertical 1000ms ease-out 1000ms both;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 20px;
+      right: 21px;
+      width: 58px;
+      height: 7px;
+      background-color: currentColor;
+    }
   }
 }
 
