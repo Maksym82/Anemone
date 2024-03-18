@@ -8,6 +8,7 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
+    height: 878px;
   }
 }
 
@@ -49,9 +50,12 @@
   }
 
   @media screen and (min-width: 1280px) {
+    z-index: 3;
     width: 166px;
     height: 166px;
     margin-right: 145px;
+    margin-top: 32px;
+    animation: move-vertical 1000ms ease-out 1000ms both;
   }
 }
 
@@ -105,8 +109,7 @@
   }
 
   to {
-    transform: translateX(var(--shift-to-x, 0))
-      translateY(var(--shift-to-y, 0));
+    transform: translateX(var(--shift-to-x, 0)) translateY(var(--shift-to-y, 0));
     color: #fff;
     fill: #fff;
   }
@@ -125,9 +128,12 @@
   }
 
   @media screen and (min-width: 1280px) {
+    z-index: 3;
     width: 101px;
     font-size: 32px;
     margin-left: 210px;
+    margin-top: 32px;
+    animation: move-vertical 1000ms ease-out 1000ms both;
   }
 }
 
@@ -144,7 +150,23 @@
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 64px;
+    top: 0;
+    padding-top: 0;
+    animation: scale-up-center 1000ms ease-out 1000ms both;
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    clip-path: inset(150px 421px 92px 421px round 226px);
+  }
+
+  50% {
+    clip-path: inset(150px 345px 92px 345px round 226px);
+  }
+
+  100% {
+    clip-path: inset(0 round 0);
   }
 }
 
@@ -160,5 +182,12 @@
   @media screen and (min-width: 768px) {
     width: 390px;
     height: 636px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    width: 1280px;
+    height: 878px;
+    border-radius: 0;
   }
 }
