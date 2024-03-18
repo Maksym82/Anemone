@@ -536,7 +536,6 @@ ul {
     max-width: 1280px;
   }
 }
-
 .about__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -567,7 +566,6 @@ ul {
     gap: 90px;
   }
 }
-
 .about__title {
   font-size: 24px;
   margin-bottom: 32px;
@@ -583,7 +581,6 @@ ul {
     margin-bottom: 26px;
   }
 }
-
 .about__text {
   margin-bottom: 0;
 }
