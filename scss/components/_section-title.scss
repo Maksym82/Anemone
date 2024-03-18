@@ -1,0 +1,18 @@
+.section-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-main);
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.section-title::after {
+  position: relative;
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid var(--color-main);
+  margin-right: -100%;
+  right: -14px;
+}

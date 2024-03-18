@@ -1,0 +1,17 @@
+.about {
+  max-width: 320px;
+  padding: 100px 0 60px 0;
+  margin: 0 auto;
+}
+
+.about__box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about__title {
+  margin-bottom: 32px;
+}
+
+
