@@ -226,7 +226,6 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 320px;
   min-height: 354px;
   padding: 44px 0 0 0;
 }
@@ -310,6 +309,7 @@ ul {
 @media screen and (min-width: 768px) {
   .hero__title {
     font-size: 120px;
+    left: 31px;
   }
 }
 
@@ -336,6 +336,11 @@ ul {
   width: 100%;
   height: 100%;
 }
+@media screen and (min-width: 768px) {
+  .hero__image {
+    padding-top: 38px;
+  }
+}
 
 .hero__img {
   width: 145px;
@@ -347,6 +352,12 @@ ul {
      object-position: center;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero__img {
+    width: 390px;
+    height: 636px;
+  }
 }
 
 /* Layout *//*# sourceMappingURL=main.css.map */
