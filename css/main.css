@@ -2,6 +2,7 @@
 :root {
   --color-main: #000000;
   --color-icon: #0e0e0e;
+  --color-white: #ffffff;
 }
 
 /* Base */
@@ -369,8 +370,8 @@ ul {
   to {
     -webkit-transform: translateX(var(--shift-to-x, 0)) translateY(var(--shift-to-y, 0));
             transform: translateX(var(--shift-to-x, 0)) translateY(var(--shift-to-y, 0));
-    color: #fff;
-    fill: #fff;
+    color: var(--color-white);
+    fill: var(--color-white);
   }
 }
 
@@ -382,8 +383,8 @@ ul {
   to {
     -webkit-transform: translateX(var(--shift-to-x, 0)) translateY(var(--shift-to-y, 0));
             transform: translateX(var(--shift-to-x, 0)) translateY(var(--shift-to-y, 0));
-    color: #fff;
-    fill: #fff;
+    color: var(--color-white);
+    fill: var(--color-white);
   }
 }
 .hero__text {
