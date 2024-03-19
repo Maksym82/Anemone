@@ -120,8 +120,8 @@
     to {
       transform: translateX(var(--shift-to-x, 0))
         translateY(var(--shift-to-y, 0));
-      color: var(--color-white);
-      fill: var(--color-white);
+      color:$colorWhite;
+      fill: $colorWhite;
     }
   }
 
