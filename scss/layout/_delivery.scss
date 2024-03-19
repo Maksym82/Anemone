@@ -1,0 +1,40 @@
+.delivery {
+  max-width: 320px;
+  padding: 0 0 60px 0;
+  margin: 0 auto;
+}
+
+.delivery__title {
+  margin-bottom: 32px;
+}
+
+.delivery__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 288px;
+}
+
+.delivery__item:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.delivery__span {
+  font-weight: 500;
+  font-size: 20px;
+  color: $colorMain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid $colorMain;
+}
+
+.delivery__text {
+  font-weight: 500;
+  font-size: 14px;
+  color: $colorMain;
+  margin-bottom: 0;
+}
