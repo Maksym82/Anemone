@@ -510,7 +510,18 @@ ul {
   background-color: #000000;
 }
 
-.footer__navigation-title {
+.footer__nav-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 44px;
+}
+
+.footer__navigation {
+  width: 116px;
+}
+
+.footer__title {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -518,8 +529,40 @@ ul {
   margin-bottom: 18px;
 }
 
+.footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.footer__nav-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .footer__logo-icon {
   display: none;
+}
+
+.footer__time {
+  width: 130px;
+}
+
+.footer__time-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  width: 85px;
+  margin-bottom: 0;
+  color: #ffffff;
 }
 
 /* Layout */
