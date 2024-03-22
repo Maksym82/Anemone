@@ -503,6 +503,25 @@ ul {
   right: -14px;
 }
 
+.footer {
+  max-width: 320px;
+  padding: 32px 0;
+  margin: 0 auto;
+  background-color: #000000;
+}
+
+.footer__navigation-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.footer__logo-icon {
+  display: none;
+}
+
 /* Layout */
 .about {
   max-width: 320px;
