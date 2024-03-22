@@ -8,6 +8,7 @@
 .footer__nav-time {
   display: flex;
   gap: 44px;
+  margin-bottom: 32px;
 }
 
 .footer__navigation {
@@ -51,4 +52,28 @@
   width: 85px;
   margin-bottom: 0;
   color: $colorWhite;
+}
+
+.footer__contacts {
+  width: 128px;
+}
+
+.address__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-style: normal;
+}
+
+.address__link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  color: $colorWhite;
+}
+
+.address__link-text {
+    display: flex;
+    flex-direction: column;
 }
