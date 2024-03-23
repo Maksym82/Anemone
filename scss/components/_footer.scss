@@ -3,12 +3,28 @@
   padding: 32px 0;
   margin: 0 auto;
   background-color: $colorMain;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 60px 0 54px 0;
+  }
+}
+
+.footer__main-block {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .footer__nav-time {
   display: flex;
   gap: 44px;
   margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 44px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__navigation {
@@ -21,6 +37,10 @@
   font-size: 18px;
   color: $colorWhite;
   margin-bottom: 18px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .footer__nav-list {
@@ -35,6 +55,10 @@
   font-size: 14px;
   color: $colorWhite;
   text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .footer__logo-icon {
@@ -43,6 +67,10 @@
 
 .footer__time {
   width: 130px;
+
+  @media screen and (min-width: 768px) {
+    width: 143px;
+  }
 }
 
 .footer__time-text {
@@ -56,6 +84,10 @@
 
 .footer__contacts {
   width: 128px;
+
+  @media screen and (min-width: 768px) {
+    width: 236px;
+  }
 }
 
 .address__list {
@@ -65,27 +97,53 @@
   font-style: normal;
 }
 
+.address__item {
+
+  @media screen and (min-width: 768px) {
+    &:nth-child(3) {
+      width: 147px;
+    }
+  }
+}
+
 .address__link {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
   color: $colorWhite;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .address__link-text {
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
-.footer__second-block {
+.footer__contacts-block {
   display: flex;
   gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    gap: 64px;
+  }
 }
 
 .footer__social {
   display: flex;
   gap: 14px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    gap: 18px;
+  }
 }
 
 .footer__soc-link {

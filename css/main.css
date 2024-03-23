@@ -509,6 +509,20 @@ ul {
   margin: 0 auto;
   background-color: #000000;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    max-width: 768px;
+    padding: 60px 0 54px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__main-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .footer__nav-time {
   display: -webkit-box;
@@ -516,6 +530,12 @@ ul {
   display: flex;
   gap: 44px;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .footer__nav-time {
+    margin-right: 44px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__navigation {
@@ -528,6 +548,11 @@ ul {
   font-size: 18px;
   color: #ffffff;
   margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+  .footer__title {
+    font-size: 20px;
+  }
 }
 
 .footer__nav-list {
@@ -548,6 +573,11 @@ ul {
   color: #ffffff;
   text-decoration: none;
 }
+@media screen and (min-width: 768px) {
+  .footer__nav-link {
+    font-size: 16px;
+  }
+}
 
 .footer__logo-icon {
   display: none;
@@ -555,6 +585,11 @@ ul {
 
 .footer__time {
   width: 130px;
+}
+@media screen and (min-width: 768px) {
+  .footer__time {
+    width: 143px;
+  }
 }
 
 .footer__time-text {
@@ -569,6 +604,11 @@ ul {
 .footer__contacts {
   width: 128px;
 }
+@media screen and (min-width: 768px) {
+  .footer__contacts {
+    width: 236px;
+  }
+}
 
 .address__list {
   display: -webkit-box;
@@ -582,12 +622,23 @@ ul {
   font-style: normal;
 }
 
+@media screen and (min-width: 768px) {
+  .address__item:nth-child(3) {
+    width: 147px;
+  }
+}
+
 .address__link {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .address__link {
+    font-size: 16px;
+  }
 }
 
 .address__link-text {
@@ -599,12 +650,25 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .address__link-text {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
-.footer__second-block {
+.footer__contacts-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 32px;
+}
+@media screen and (min-width: 768px) {
+  .footer__contacts-block {
+    gap: 64px;
+  }
 }
 
 .footer__social {
@@ -612,6 +676,15 @@ ul {
   display: -ms-flexbox;
   display: flex;
   gap: 14px;
+}
+@media screen and (min-width: 768px) {
+  .footer__social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 18px;
+  }
 }
 
 .footer__soc-link {
