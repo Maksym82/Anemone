@@ -74,6 +74,25 @@
 }
 
 .address__link-text {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__second-block {
+  display: flex;
+  gap: 32px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 14px;
+}
+
+.footer__soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  stroke: $colorWhite;
 }
