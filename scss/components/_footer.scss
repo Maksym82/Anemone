@@ -8,6 +8,11 @@
     max-width: 768px;
     padding: 60px 0 54px 0;
   }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px; 
+    padding: 72px 0;
+  }
 }
 
 .footer__main-block {
@@ -24,6 +29,11 @@
   @media screen and (min-width: 768px) {
     margin-right: 44px;
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 96px;
+    margin-right: 96px;
   }
 }
 
@@ -63,6 +73,12 @@
 
 .footer__logo-icon {
   display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    margin-right: 210px;
+    fill: $colorWhite;
+  }
 }
 
 .footer__time {
@@ -133,6 +149,10 @@
 
   @media screen and (min-width: 768px) {
     gap: 64px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 208px;
   }
 }
 
