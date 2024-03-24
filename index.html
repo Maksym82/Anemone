@@ -35,7 +35,7 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="">Anemone</a>
+                <a class="nav__link" href="#anemone">Anemone</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#about">About us</a>
@@ -56,17 +56,46 @@
               <use href="./images/icons.svg#icon-tel"></use>
             </svg>
           </a>
-          <button class="burger__menu-open" type="button">
+          <button class="burger__menu-open js-open-menu" type="button">
             <svg class="burger__icon-open">
               <use href="./images/icons.svg#icon-Burger"></use>
             </svg>
           </button>
+          <!--Mobile menu-->
+          <div class="mobile-menu is-hidden js-menu-container">
+            <div class="mobile-menu__container">
+              <button class="mobile-menu__close js-close-menu" type="button">
+                <svg class="icon-burger-close">
+                  <use href="./images/icons.svg#icon-close-menu"></use>
+                </svg>
+              </button>
+              <nav class="mobile">
+                <ul class="mobile__list">
+                  <li class="mobile__item">
+                    <a class="mobile__link" href="#anemone">Anemone</a>
+                  </li>
+                  <li class="mobile__item">
+                    <a class="mobile__link" href="#about">About us</a>
+                  </li>
+                  <li class="mobile__item">
+                    <a class="mobile__link" href="#store">Store</a>
+                  </li>
+                  <li class="mobile__item">
+                    <a class="mobile__link" href="#delivery">Delivery</a>
+                  </li>
+                  <li class="mobile__item">
+                    <a class="mobile__link" href="#blog">Blog</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <!--Hero-->
-      <section class="hero">
+      <section class="hero" id="anemone">
         <div class="container">
           <div class="hero__container">
             <h1 class="hero__title" style="--shift-to-y: -280px">Anemone</h1>
