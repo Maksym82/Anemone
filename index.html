@@ -393,8 +393,38 @@
       </div>
     </footer>
     <!--Modal window "Contact-us"-->
-    <div class="backdrop is-hidden" >
-
+    <div class="backdrop-order is-hidden" data-modal-buy>
+      <div class="modal-order">
+        <button class="modal-order__close" type="button" data-modal-close-buy>
+          <svg class="modal-close">
+            <use href="./images/icons.svg#icon-close-menu"></use>
+          </svg>
+        </button>
+        <h2 class="modal-order__title">Contact us</h2>
+        <p class="modal-order__text">
+          If you have any additional questions or you want to clarify something
+          before you make an order please fill in your contact details. We will
+          call you back.
+        </p>
+        <form class="modal-form">
+          <label class="modal-form__label" for="user-name">Name</label>
+          <input
+            class="modal-form__input"
+            type="text"
+            id="user-name"
+            name="name"
+            placeholder="Your name"
+            minlength="3"
+            required
+          />
+          <svg class="modal-icon__valid" width="16" height="16">
+            <use href="./images/icons.svg#icon-valid-icon"></use>
+          </svg>
+          <svg class="modal-icon__invalid" width="16" height="16">
+            <use href="./images/icons.svg#icon-invalid-icon"></use>
+          </svg>
+        </form>
+      </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
   </body>
