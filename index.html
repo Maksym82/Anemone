@@ -407,25 +407,52 @@
           call you back.
         </p>
         <form class="modal-form">
-          <label class="modal-form__label" for="user-name">Name</label>
-          <input
-            class="modal-form__input"
-            type="text"
-            id="user-name"
-            name="name"
-            placeholder="Your name"
-            minlength="3"
-            required
-          />
-          <svg class="modal-icon__valid" width="16" height="16">
-            <use href="./images/icons.svg#icon-valid-icon"></use>
-          </svg>
-          <svg class="modal-icon__invalid" width="16" height="16">
-            <use href="./images/icons.svg#icon-invalid-icon"></use>
-          </svg>
+          <label class="modal-form__label" for="user-name"
+            >Name
+            <input
+              class="modal-form__input"
+              type="text"
+              id="user-name"
+              name="name"
+              placeholder="Your name"
+              minlength="3"
+              required
+            />
+            <svg class="modal-icon__valid" width="16" height="16">
+              <use href="./images/icons.svg#icon-valid-icon"></use>
+            </svg>
+            <svg class="modal-icon__invalid" width="16" height="16">
+              <use href="./images/icons.svg#icon-invalid-icon"></use>
+            </svg>
+          </label>
+          <label class="modal-form__label" for="user-email"
+            >Email
+            <input
+              class="modal-form__input"
+              type="email"
+              id="user-email"
+              name="mail"
+              placeholder="Your email"
+              required
+            />
+            <svg class="modal-icon__valid" width="16" height="16">
+              <use href="./images/icons.svg#icon-valid-icon"></use>
+            </svg>
+            <svg class="modal-icon__invalid" width="16" height="16">
+              <use href="./images/icons.svg#icon-invalid-icon"></use>
+            </svg>
+          </label>
         </form>
+        <button
+          class="modal-form__button"
+          type="submit"
+          data-modal-order-submit
+        >
+          Send
+        </button>
       </div>
     </div>
+    
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

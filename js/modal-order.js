@@ -3,7 +3,7 @@
     openBuyModalBtns: document.querySelectorAll('[data-modal-open-buy]'),
     closeBuyModalBtn: document.querySelector('[data-modal-close-buy]'),
     closeModalThankBtn: document.querySelector('[data-modal-close-thankyou]'),
-    submitBuyBtn: document.querySelector('[data-hero-button-buy-submit]'),
+    submitBuyBtn: document.querySelector('[data-modal-order-submit]'),
     buyModal: document.querySelector('[data-modal-buy]'),
     thankModal: document.querySelector('[data-top-sellers-thankyou]'),
   };
