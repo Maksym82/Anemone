@@ -122,6 +122,7 @@
             <button
               class="hero__button"
               type="button"
+              data-modal-open-buy
               style="--shift-from-x: 0; --shift-to-x: 25px; --shift-to-y: 170px"
             >
               <svg class="hero__button-icon" width="166" height="166">
@@ -468,10 +469,15 @@
           <use href="./images/icons.svg#icon-pop-up"></use>
         </svg>
         <h2 class="pop-up__thank">Thank you!</h2>
-        <p class="pop-up__text">We have received your contact details and will reach you soon.</p>
-        <button class="button__pop-up" type="submit" data-modal-close-thankyou>Continue</button>
+        <p class="pop-up__text">
+          We have received your contact details and will reach you soon.
+        </p>
+        <button class="button__pop-up" type="submit" data-modal-close-thankyou>
+          Continue
+        </button>
       </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal-order.js"></script>
   </body>
 </html>
