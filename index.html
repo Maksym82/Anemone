@@ -135,22 +135,24 @@
             </button>
           </div>
           <div class="hero__image">
-            <source
-              src="./images/hero/hero-webp@1x.webp 1x, ./images/hero/hero-webp@2x.webp 2x"
-              type="image/webp"
-            />
-            <source
-              srcset="
-                ./images/hero/hero@1x.jpg 1x,
-                ./images/hero/hero@2x.jpg 2x
-              "
-              type="image/jpeg"
-            />
-            <img
-              class="hero__img"
-              src="./images/hero/hero.jpg"
-              alt="red flower"
-            />
+            <picture>
+              <source
+                src="./images/hero/hero-webp@1x.webp 1x, ./images/hero/hero-webp@2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/hero/hero@1x.jpg 1x,
+                  ./images/hero/hero@2x.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                class="hero__img"
+                src="./images/hero/hero.jpg"
+                alt="red flower"
+              />
+            </picture>
           </div>
         </div>
       </section>

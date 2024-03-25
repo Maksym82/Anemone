@@ -1199,6 +1199,8 @@ ul {
   font-weight: 500;
   font-size: 10px;
   color: #5c5c5c;
+}
+.modal-form__label:not(:last-child) {
   margin-bottom: 14px;
 }
 
@@ -1302,7 +1304,7 @@ ul {
   opacity: 1;
 }
 
-.modal-icon-invalid {
+.modal-icon__invalid {
   position: absolute;
   right: 16px;
   bottom: 10px;
@@ -1310,10 +1312,25 @@ ul {
   height: 16px;
 }
 
-.modal-icon-valid {
+.modal-icon__valid {
   position: absolute;
   right: 16px;
   bottom: 10px;
   width: 16px;
   height: 16px;
+}
+
+.modal-form__button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 37px;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 74px;
+  background-color: #e86f54;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
