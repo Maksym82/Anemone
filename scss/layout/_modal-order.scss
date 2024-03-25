@@ -1,6 +1,6 @@
 .backdrop-order {
   position: fixed;
-  //   z-index: 5;
+  z-index: 5;
   top: 0;
   left: 0;
   display: flex;
@@ -13,11 +13,11 @@
   transition: opacity 500ms, visibility 500ms;
 }
 
-// .backdrop-order.is-hidden {
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-// }
+.backdrop-order.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 .backdrop.is-hidden .modal-order {
   transform: scale(0);
@@ -121,6 +121,22 @@
   border-color: red;
 }
 
-.modal-form__input:not(:placeholder-shown):required:invalid +svg + svg {
+.modal-form__input:not(:placeholder-shown):required:invalid + svg + svg {
   opacity: 1;
+}
+
+.modal-icon-invalid {
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.modal-icon-valid {
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  width: 16px;
+  height: 16px;
 }

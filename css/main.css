@@ -412,7 +412,6 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .hero__image {
@@ -1102,6 +1101,7 @@ ul {
 
 .backdrop-order {
   position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
   display: -webkit-box;
@@ -1120,6 +1120,12 @@ ul {
           transition-duration: 500ms;
   -webkit-transition: opacity 500ms, visibility 500ms;
   transition: opacity 500ms, visibility 500ms;
+}
+
+.backdrop-order.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .backdrop.is-hidden .modal-order {
@@ -1294,4 +1300,20 @@ ul {
 
 .modal-form__input:not(:placeholder-shown):required:invalid + svg + svg {
   opacity: 1;
+}
+
+.modal-icon-invalid {
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.modal-icon-valid {
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  width: 16px;
+  height: 16px;
 }/*# sourceMappingURL=main.css.map */
