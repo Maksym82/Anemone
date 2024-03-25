@@ -19,7 +19,7 @@
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal-order {
+.backdrop-order.is-hidden .modal-order {
   transform: scale(0);
 }
 
@@ -159,4 +159,28 @@
   font-weight: 600;
   font-size: 14px;
   color: $colorWhite;
+}
+
+/* Modal Pop-up*/
+.modal__pop-up {
+  position: relative;
+  max-width: 272px;
+  min-height: 357px;
+  padding: 44px 16px 32px 16px;
+  text-align: center;
+  background-color: $colorWhite;
+}
+
+.pop-up__thank {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: $colorMain;
+}
+
+.pop-up__text {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: $colorFormText;
 }
