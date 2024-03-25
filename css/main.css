@@ -1269,27 +1269,27 @@ ul {
 }
 
 .modal-form__input:not(:-moz-placeholder-shown):required:valid {
-  border-color: green;
+  border-color: #3cbc81;
 }
 
 .modal-form__input:not(:-ms-input-placeholder):required:valid {
-  border-color: green;
+  border-color: #3cbc81;
 }
 
 .modal-form__input:not(:placeholder-shown):required:valid {
-  border-color: green;
+  border-color: #3cbc81;
 }
 
 .modal-form__input:not(:-moz-placeholder-shown):required:invalid {
-  border-color: red;
+  border-color: #e74a3b;
 }
 
 .modal-form__input:not(:-ms-input-placeholder):required:invalid {
-  border-color: red;
+  border-color: #e74a3b;
 }
 
 .modal-form__input:not(:placeholder-shown):required:invalid {
-  border-color: red;
+  border-color: #e74a3b;
 }
 
 .modal-form__input:not(:-moz-placeholder-shown):required:invalid + svg + svg {
@@ -1310,6 +1310,7 @@ ul {
   bottom: 10px;
   width: 16px;
   height: 16px;
+  fill: #e74a3b;
 }
 
 .modal-icon__valid {
@@ -1318,6 +1319,7 @@ ul {
   bottom: 10px;
   width: 16px;
   height: 16px;
+  fill: #3cbc81;
 }
 
 .modal-form__button {
