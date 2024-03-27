@@ -1406,7 +1406,6 @@ ul {
   height: 37px;
   border-radius: 8px;
   border: none;
-  padding: 8px 74px;
   background-color: #e86f54;
   cursor: pointer;
   font-weight: 600;
@@ -1416,7 +1415,6 @@ ul {
 @media screen and (min-width: 768px) {
   .modal-form__button {
     height: 50px;
-    padding: 14px 184px;
     font-size: 18px;
   }
 }
@@ -1430,12 +1428,38 @@ ul {
   text-align: center;
   background-color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .modal__pop-up {
+    max-width: 480px;
+    min-height: 505;
+    padding: 54px 32px;
+  }
+}
+
+.icon__pop-up {
+  width: 188px;
+  height: 142px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .icon__pop-up {
+    width: 367px;
+    height: 202px;
+  }
+}
 
 .pop-up__thank {
   font-weight: 600;
   font-size: 20px;
   text-align: center;
   color: #000000;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .pop-up__thank {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
 }
 
 .pop-up__text {
@@ -1443,4 +1467,11 @@ ul {
   font-size: 12px;
   text-align: center;
   color: #5c5c5c;
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+  .pop-up__text {
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -208,7 +208,6 @@
   height: 37px;
   border-radius: 8px;
   border: none;
-  padding: 8px 74px;
   background-color: $colorPink;
   cursor: pointer;
   font-weight: 600;
@@ -217,7 +216,6 @@
 
   @media screen and (min-width: 768px) {
     height: 50px;
-    padding: 14px 184px;
     font-size: 18px;
   }
 }
@@ -230,6 +228,23 @@
   padding: 44px 16px 32px 16px;
   text-align: center;
   background-color: $colorWhite;
+
+  @media screen and (min-width: 768px) {
+    max-width: 480px;
+    min-height: 505;
+    padding: 54px 32px;
+  }
+}
+
+.icon__pop-up {
+  width: 188px;
+  height: 142px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 367px;
+    height: 202px;
+  }
 }
 
 .pop-up__thank {
@@ -237,6 +252,12 @@
   font-size: 20px;
   text-align: center;
   color: $colorMain;
+  margin-bottom: 14px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
 }
 
 .pop-up__text {
@@ -244,4 +265,10 @@
   font-size: 12px;
   text-align: center;
   color: $colorFormText;
+  margin-bottom: 18px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
 }
