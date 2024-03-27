@@ -261,7 +261,7 @@
               <p class="store__card-price">from $60</p>
             </li>
           </ul>
-          <button class="store__button" type="button">Order flowers</button>
+          <button class="store__button" type="button" data-modal-order-flowers>Order flowers</button>
         </div>
       </section>
       <!--Delivery-->
@@ -458,8 +458,8 @@
       <div class="modal__pop-up">
         <button
           class="modal-order__close modal-pop__close"
-          type="button" data-modal-close-thankyou
-          
+          type="button"
+          data-modal-close-thankyou
         >
           <svg class="modal-close">
             <use href="./images/icons.svg#icon-close-menu"></use>
@@ -472,7 +472,11 @@
         <p class="pop-up__text">
           We have received your contact details and will reach you soon.
         </p>
-        <button class="modal-form__button" type="submit" data-modal-close-thankyou>
+        <button
+          class="modal-form__button"
+          type="button"
+          data-modal-close-continue
+        >
           Continue
         </button>
       </div>
