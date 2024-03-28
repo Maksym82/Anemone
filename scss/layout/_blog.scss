@@ -1,0 +1,24 @@
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  background-color: aliceblue;
+}
+
+.swiper-slide img {
+  width: 58%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 140px !important;
+  left: auto;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 140px !important;
+  right: auto;
+}
