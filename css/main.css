@@ -1483,6 +1483,7 @@ ul {
   display: none;
   cursor: pointer;
   z-index: 15;
+  opacity: 0.4;
 }
 
 .scroll-up {
