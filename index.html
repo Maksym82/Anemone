@@ -317,6 +317,7 @@
           src="./images/delivery/delivery-mobile.jpg"
         />
       </section>
+      <!--Blog-->
       <section class="blog" id="blog">
         <div class="container">
           <h2 class="section-title blog__title">Blog</h2>
@@ -396,7 +397,36 @@
                 src="./images/blog/blog-5-desk.jpg"
               />
             </div>
+            <div>
+              <img
+                srcset="
+                  ./images/blog/blog-6-mobile-136.jpg 136w,
+                  ./images/blog/blog-6-mobile-272.jpg 272w,
+                  ./images/blog/blog-6-tablet-344.jpg 344w,
+                  ./images/blog/blog-6-tablet-688.jpg 688w,
+                  ./images/blog/blog-6-desk-390.jpg   390w,
+                  ./images/blog/blog-6-desk-780.jpg   780w
+                "
+                sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
+                alt="flowers"
+                src="./images/blog/blog-6-desk.jpg"
+              />
+            </div>
+            <button>
+              <svg width="39" height="5">
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button>
+              <svg width="39" height="5">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
           </div>
+          <h3 class="blog__text">Follow to our newsletter</h3>
+          <button class="blog__button" type="button">
+            Subscribe
+          </button>
         </div>
       </section>
     </main>

@@ -1476,6 +1476,47 @@ ul {
   }
 }
 
+.blog {
+  max-width: 320px;
+  padding: 0 0 60px 0;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .blog {
+    max-width: 768px;
+    padding: 0 0 100px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .blog {
+    max-width: 1280px;
+  }
+}
+
+.blog__text {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+.blog__button {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 38px;
+  width: 170px;
+  height: 40px;
+  background-color: #e86f54;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
 #scrollToTop {
   position: fixed;
   bottom: 40px;
