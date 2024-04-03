@@ -19,6 +19,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--Slick-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -61,50 +72,50 @@
               <use href="./images/icons.svg#icon-Burger"></use>
             </svg>
           </button>
-          <!--Scroll-up-->
-          <div id="scrollToTop">
-            <svg class="scroll-up" width="60" height="60">
-              <use href="./images/icons.svg#icon-circle-chevron-up-solid"></use>
-            </svg>
-          </div>
-          <!--Mobile menu-->
-          <div class="mobile-menu is-hidden js-menu-container">
-            <div class="mobile-menu__container">
-              <button class="mobile-menu__close js-close-menu" type="button">
-                <svg class="icon-burger-close">
-                  <use href="./images/icons.svg#icon-close-menu"></use>
-                </svg>
-              </button>
-              <nav class="mobile">
-                <ul class="mobile__list">
-                  <li class="mobile__item">
-                    <a class="mobile__link mobile-header-link" href="#anemone"
-                      >Anemone</a
-                    >
-                  </li>
-                  <li class="mobile__item">
-                    <a class="mobile__link mobile-header-link" href="#about"
-                      >About us</a
-                    >
-                  </li>
-                  <li class="mobile__item">
-                    <a class="mobile__link mobile-header-link" href="#store"
-                      >Store</a
-                    >
-                  </li>
-                  <li class="mobile__item">
-                    <a class="mobile__link mobile-header-link" href="#delivery"
-                      >Delivery</a
-                    >
-                  </li>
-                  <li class="mobile__item">
-                    <a class="mobile__link mobile-header-link" href="#blog"
-                      >Blog</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
+        </div>
+        <!--Scroll-up-->
+        <div id="scrollToTop">
+          <svg class="scroll-up" width="60" height="60">
+            <use href="./images/icons.svg#icon-circle-chevron-up-solid"></use>
+          </svg>
+        </div>
+        <!--Mobile menu-->
+        <div class="mobile-menu is-hidden js-menu-container">
+          <div class="mobile-menu__container">
+            <button class="mobile-menu__close js-close-menu" type="button">
+              <svg class="icon-burger-close">
+                <use href="./images/icons.svg#icon-close-menu"></use>
+              </svg>
+            </button>
+            <nav class="mobile">
+              <ul class="mobile__list">
+                <li class="mobile__item">
+                  <a class="mobile__link mobile-header-link" href="#anemone"
+                    >Anemone</a
+                  >
+                </li>
+                <li class="mobile__item">
+                  <a class="mobile__link mobile-header-link" href="#about"
+                    >About us</a
+                  >
+                </li>
+                <li class="mobile__item">
+                  <a class="mobile__link mobile-header-link" href="#store"
+                    >Store</a
+                  >
+                </li>
+                <li class="mobile__item">
+                  <a class="mobile__link mobile-header-link" href="#delivery"
+                    >Delivery</a
+                  >
+                </li>
+                <li class="mobile__item">
+                  <a class="mobile__link mobile-header-link" href="#blog"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -321,8 +332,8 @@
       <section class="blog" id="blog">
         <div class="container">
           <h2 class="section-title blog__title">Blog</h2>
-          <div>
-            <div>
+          <div class="slick__list responsive slick">
+            <div class="slick__item">
               <img
                 srcset="
                   ./images/blog/blog-1-mobile-136.jpg 136w,
@@ -337,8 +348,9 @@
                 src="./images/blog/blog-1-desk.jpg"
               />
             </div>
-            <div>
+            <div class="slick__item">
               <img
+                class="slick__box"
                 srcset="
                   ./images/blog/blog-2-mobile-136.jpg 136w,
                   ./images/blog/blog-2-mobile-272.jpg 272w,
@@ -352,8 +364,9 @@
                 src="./images/blog/blog-2-desk.jpg"
               />
             </div>
-            <div>
+            <div class="slick__item">
               <img
+                class="slick__box"
                 srcset="
                   ./images/blog/blog-3-mobile-136.jpg 136w,
                   ./images/blog/blog-3-mobile-272.jpg 272w,
@@ -367,8 +380,9 @@
                 src="./images/blog/blog-3-desk.jpg"
               />
             </div>
-            <div>
+            <div class="slick__item">
               <img
+                class="slick__box"
                 srcset="
                   ./images/blog/blog-4-mobile-136.jpg 136w,
                   ./images/blog/blog-4-mobile-272.jpg 272w,
@@ -382,8 +396,9 @@
                 src="./images/blog/blog-4-desk.jpg"
               />
             </div>
-            <div>
+            <div class="slick__item">
               <img
+                class="slick__box"
                 srcset="
                   ./images/blog/blog-5-mobile-136.jpg 136w,
                   ./images/blog/blog-5-mobile-272.jpg 272w,
@@ -397,8 +412,9 @@
                 src="./images/blog/blog-5-desk.jpg"
               />
             </div>
-            <div>
+            <div class="slick__item">
               <img
+                class="slick__box"
                 srcset="
                   ./images/blog/blog-6-mobile-136.jpg 136w,
                   ./images/blog/blog-6-mobile-272.jpg 272w,
@@ -412,21 +428,19 @@
                 src="./images/blog/blog-6-desk.jpg"
               />
             </div>
-            <button>
-              <svg width="39" height="5">
+            <button class="my-slick-prev" type="button">
+              <svg class="slick_arrow" width="39" height="5">
                 <use href="./images/icons.svg#icon-arrow-left"></use>
               </svg>
             </button>
-            <button>
-              <svg width="39" height="5">
+            <button class="my-slick-next" type="button">
+              <svg class="slick_arrow" width="39" height="5">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
             </button>
           </div>
           <h3 class="blog__text">Follow to our newsletter</h3>
-          <button class="blog__button" type="button">
-            Subscribe
-          </button>
+          <button class="blog__button" type="button">Subscribe</button>
         </div>
       </section>
     </main>
@@ -598,5 +612,20 @@
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal-order.js"></script>
     <script src="./js/scrollup.js"></script>
+    <script src="./js/slick.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </body>
 </html>
