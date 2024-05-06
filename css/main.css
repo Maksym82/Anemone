@@ -1494,7 +1494,6 @@ ul {
 }
 
 .slick__list {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1509,6 +1508,12 @@ ul {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .slick__item {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
 .slick__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1522,9 +1527,20 @@ ul {
   width: 136px;
   height: 181px;
   margin: 0 auto;
-  font-size: 58px;
 }
 
+@media screen and (min-width: 768px) {
+  .slick__box {
+    width: 344px;
+    height: 398px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slick__box {
+    width: 390px;
+    height: 421px;
+  }
+}
 .my-slick-prev,
 .my-slick-next {
   position: absolute;
@@ -1555,6 +1571,17 @@ ul {
   left: 25%;
 }
 
+@media screen and (min-width: 768px) {
+  .my-slick-prev {
+    bottom: 0px;
+    left: 35%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .my-slick-prev {
+    left: 40%;
+  }
+}
 .my-slick-next {
   width: 67px;
   height: 67px;
@@ -1562,6 +1589,16 @@ ul {
   right: 25%;
 }
 
+@media screen and (min-width: 768px) {
+  .my-slick-next {
+    right: 35%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .my-slick-next {
+    right: 40%;
+  }
+}
 .slick_arrow {
   width: 67px;
   height: 67px;

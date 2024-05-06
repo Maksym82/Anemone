@@ -33,14 +33,14 @@
   }
 }
 
-// .slick__box {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-  // width: 136px;
-  // height: 181px;
-  // margin: 0 auto;
-// }
+.slick__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 136px;
+  height: 181px;
+  margin: 0 auto;
+}
 
 @media screen and (min-width: 768px) {
   .slick__box {
@@ -99,6 +99,20 @@
   bottom: 0px;
   right: 25%;
 }
+
+@media screen and (min-width: 768px) {
+  .my-slick-next {
+   right: 35%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .my-slick-next {
+    right: 40%;
+  }
+}
+
+
 
 .slick_arrow {
   width: 67px;
