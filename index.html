@@ -341,8 +341,8 @@
                   ./images/blog/blog-1-mobile-272.jpg 272w,
                   ./images/blog/blog-1-tablet-344.jpg 344w,
                   ./images/blog/blog-1-tablet-688.jpg 688w,
-                  ./images/blog/blog-1-desk-390.jpg 390w,
-                  ./images/blog/blog-1-desk-780.jpg 780w
+                  ./images/blog/blog-1-desk-390.jpg   390w,
+                  ./images/blog/blog-1-desk-780.jpg   780w
                 "
                 sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
                 alt="flowers"
@@ -357,8 +357,8 @@
                   ./images/blog/blog-2-mobile-272.jpg 272w,
                   ./images/blog/blog-2-tablet-344.jpg 344w,
                   ./images/blog/blog-2-tablet-688.jpg 688w,
-                  ./images/blog/blog-2-desk-390.jpg 390w,
-                  ./images/blog/blog-2-desk-780.jpg 780w
+                  ./images/blog/blog-2-desk-390.jpg   390w,
+                  ./images/blog/blog-2-desk-780.jpg   780w
                 "
                 sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
                 alt="flowers"
@@ -373,8 +373,8 @@
                   ./images/blog/blog-3-mobile-272.jpg 272w,
                   ./images/blog/blog-3-tablet-344.jpg 344w,
                   ./images/blog/blog-3-tablet-688.jpg 688w,
-                  ./images/blog/blog-3-desk-390.jpg 390w,
-                  ./images/blog/blog-3-desk-780.jpg 780w
+                  ./images/blog/blog-3-desk-390.jpg   390w,
+                  ./images/blog/blog-3-desk-780.jpg   780w
                 "
                 sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
                 alt="flowers"
@@ -389,8 +389,8 @@
                   ./images/blog/blog-4-mobile-272.jpg 272w,
                   ./images/blog/blog-4-tablet-344.jpg 344w,
                   ./images/blog/blog-4-tablet-688.jpg 688w,
-                  ./images/blog/blog-4-desk-390.jpg 390w,
-                  ./images/blog/blog-4-desk-780.jpg 780w
+                  ./images/blog/blog-4-desk-390.jpg   390w,
+                  ./images/blog/blog-4-desk-780.jpg   780w
                 "
                 sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
                 alt="flowers"
@@ -405,8 +405,8 @@
                   ./images/blog/blog-5-mobile-272.jpg 272w,
                   ./images/blog/blog-5-tablet-344.jpg 344w,
                   ./images/blog/blog-5-tablet-688.jpg 688w,
-                  ./images/blog/blog-5-desk-390.jpg 390w,
-                  ./images/blog/blog-5-desk-780.jpg 780w
+                  ./images/blog/blog-5-desk-390.jpg   390w,
+                  ./images/blog/blog-5-desk-780.jpg   780w
                 "
                 sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
                 alt="flowers"
@@ -421,8 +421,8 @@
                   ./images/blog/blog-6-mobile-272.jpg 272w,
                   ./images/blog/blog-6-tablet-344.jpg 344w,
                   ./images/blog/blog-6-tablet-688.jpg 688w,
-                  ./images/blog/blog-6-desk-390.jpg 390w,
-                  ./images/blog/blog-6-desk-780.jpg 780w
+                  ./images/blog/blog-6-desk-390.jpg   390w,
+                  ./images/blog/blog-6-desk-780.jpg   780w
                 "
                 sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
                 alt="flowers"
@@ -601,8 +601,27 @@
       </div>
     </div>
     <!--Modal subscribe-->
-    <div class="modal modal-sub">
-
+    <div class="backdrop-order is-hidden" data-modal-buy>
+      <div class="modal-order">
+        <button class="modal-order__close" type="button" data-modal-close-buy>
+          <svg class="modal-close">
+            <use href="./images/icons.svg#icon-close-menu"></use>
+          </svg>
+        </button>
+        <img
+          class="modal-img"
+          srcset="
+            ./images/blog-modal/blog-modal-mob@1x.jpg 272w,
+            ./images/blog-modal/blog-modal-mob@1x.jpg 544w,
+            ./images/blog-modal/blog-modal-tablet@1x 588w,
+            ./images/blog-modal/blog-modal-tablet@2x 1176w,
+            ./images/blog-modal/blog-modal-desktop@1x 428w,
+            ./images/blog-modal/blog-modal-desktop@2x 856w
+          "
+          sizes="(min-width: 1280px) 428px, (min-width: 768px) 588px, (min-width: 320px) 272px, 100vw"
+          alt="flowers"
+        />
+      </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal-order.js"></script>
