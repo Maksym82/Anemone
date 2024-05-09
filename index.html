@@ -611,16 +611,35 @@
         <img
           class="modal-img"
           srcset="
-            ./images/blog-modal/blog-modal-mob@1x.jpg 272w,
-            ./images/blog-modal/blog-modal-mob@1x.jpg 544w,
-            ./images/blog-modal/blog-modal-tablet@1x 588w,
-            ./images/blog-modal/blog-modal-tablet@2x 1176w,
-            ./images/blog-modal/blog-modal-desktop@1x 428w,
-            ./images/blog-modal/blog-modal-desktop@2x 856w
+            ./images/blog-modal/blog-modal-mob@1x.jpg  272w,
+            ./images/blog-modal/blog-modal-mob@1x.jpg  544w,
+            ./images/blog-modal/blog-modal-tablet@1x   588w,
+            ./images/blog-modal/blog-modal-tablet@2x  1176w,
+            ./images/blog-modal/blog-modal-desktop@1x  428w,
+            ./images/blog-modal/blog-modal-desktop@2x  856w
           "
           sizes="(min-width: 1280px) 428px, (min-width: 768px) 588px, (min-width: 320px) 272px, 100vw"
           alt="flowers"
         />
+        <div class="modal-container">
+          <h2 class="modal__title">Follow to our newsletter</h2>
+          <p class="modal__text">
+            Be the first to get exclusive offers and the latest news on our
+            product directly in your box.
+          </p>
+
+          <form class="modal-sub-form">
+            <label class="modal-sub-mail-label" for="sub_email"
+              >Email<input
+                class="modal-sub-mail-field"
+                type="email"
+                id="sub_email"
+                name="mail"
+                placeholder="Your email"
+                required
+              />
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
