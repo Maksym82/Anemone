@@ -45,6 +45,18 @@
   }
 }
 
+.modal-container {
+    padding: 0 16px;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 118px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 112px 40px;
+    }
+}
+
 .modal-img {
   width: 100%;
   height: auto;
@@ -64,7 +76,7 @@
   font-size: 12px;
   line-height: 130%;
   width: 236px;
-  margin: 0 18px 18px;
+  margin-bottom: 18px;
   text-align: center;
   color: $colorFormText;
 }
