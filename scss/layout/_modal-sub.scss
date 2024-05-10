@@ -46,7 +46,25 @@
 }
 
 .modal-img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 18px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 18px;
+}
+
+.modal__title {
+  font-weight: 600;
+  font-size: 19px;
+  margin-bottom: 14px;
+  text-align: center;
+  color: $colorMain;
+}
+
+.modal__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  width: 236px;
+  margin: 0 18px 18px;
+  text-align: center;
+  color: $colorFormText;
 }
