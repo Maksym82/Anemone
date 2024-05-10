@@ -28,6 +28,25 @@
   overflow: auto;
   max-width: 272px;
   min-height: 380px;
-  padding: 28px 16px;
+  padding-bottom: 28px;
   background-color: $colorWhite;
+
+  @media screen and (min-width: 768px) {
+    max-width: 588px;
+    min-height: 644px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    max-width: 860px;
+    min-height: 528px;
+    padding-bottom: 0;
+  }
+}
+
+.modal-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 18px;
 }
