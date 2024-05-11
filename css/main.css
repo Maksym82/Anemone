@@ -1721,6 +1721,17 @@ ul {
   height: auto;
   margin-bottom: 18px;
 }
+@media screen and (min-width: 768px) {
+  .modal-img {
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .modal-img {
+    width: 428px;
+    margin-bottom: 0;
+  }
+}
 
 .modal__title {
   font-weight: 600;
@@ -1728,6 +1739,12 @@ ul {
   margin-bottom: 14px;
   text-align: center;
   color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .modal__title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
 }
 
 .modal__text {
@@ -1738,6 +1755,13 @@ ul {
   margin-bottom: 18px;
   text-align: center;
   color: #5c5c5c;
+}
+@media screen and (min-width: 768px) {
+  .modal__text {
+    font-size: 16px;
+    width: 336px;
+    margin-bottom: 32px;
+  }
 }
 
 .modal-sub-mail-label {
@@ -1759,6 +1783,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .modal-sub-mail-label {
+    font-size: 14px;
     margin-bottom: 28px;
   }
 }
@@ -1771,6 +1796,15 @@ ul {
   outline: none;
   border: 1px solid #d7d7d7;
   border-radius: 4px;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .modal-sub-mail-field {
+    width: 336px;
+    height: 49px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .modal-sub-mail-field:focus {
@@ -1810,6 +1844,23 @@ ul {
   font-size: 12px;
   line-height: 1.25;
   color: rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 768px) {
+  .modal-sub-mail-field::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .modal-sub-mail-field::-moz-placeholder {
+    font-size: 14px;
+  }
+  .modal-sub-mail-field:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .modal-sub-mail-field::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .modal-sub-mail-field::placeholder {
+    font-size: 14px;
+  }
 }
 
 .modal-sub__button {
@@ -1891,6 +1942,12 @@ ul {
   bottom: 10px;
   fill: #e74a3b;
 }
+@media screen and (min-width: 768px) {
+  .modal-icon-invalid-sub {
+    right: 26px;
+    bottom: 16px;
+  }
+}
 
 .modal-icon-valid-sub {
   opacity: 0;
@@ -1900,4 +1957,10 @@ ul {
   right: 16px;
   bottom: 10px;
   fill: #3cbc81;
+}
+@media screen and (min-width: 768px) {
+  .modal-icon-valid-sub {
+    right: 26px;
+    bottom: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */

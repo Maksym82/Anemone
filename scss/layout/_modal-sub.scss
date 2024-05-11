@@ -61,6 +61,15 @@
   width: 100%;
   height: auto;
   margin-bottom: 18px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 428px;
+    margin-bottom: 0;
+  }
 }
 
 .modal__title {
@@ -69,6 +78,11 @@
   margin-bottom: 14px;
   text-align: center;
   color: $colorMain;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
 }
 
 .modal__text {
@@ -79,6 +93,12 @@
   margin-bottom: 18px;
   text-align: center;
   color: $colorFormText;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    width: 336px;
+    margin-bottom: 32px;
+  }
 }
 
 .modal-sub-mail-label {
@@ -95,6 +115,7 @@
 
 @media screen and (min-width: 768px) {
   .modal-sub-mail-label {
+    font-size: 14px;
     margin-bottom: 28px;
   }
 }
@@ -108,6 +129,14 @@
   outline: none;
   border: 1px solid $colorFormInput;
   border-radius: 4px;
+  font-size: 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 49px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .modal-sub-mail-field:focus {
@@ -118,8 +147,11 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
-
   color: rgba(0, 0, 0, 0.3);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .modal-sub__button {
@@ -167,6 +199,11 @@
   right: 16px;
   bottom: 10px;
   fill: #e74a3b;
+
+  @media screen and (min-width: 768px) {
+    right: 26px;
+    bottom: 16px;
+  }
 }
 
 .modal-icon-valid-sub {
@@ -177,4 +214,9 @@
   right: 16px;
   bottom: 10px;
   fill: #3cbc81;
+
+  @media screen and (min-width: 768px) {
+    right: 26px;
+    bottom: 16px;
+  }
 }
