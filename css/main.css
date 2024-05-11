@@ -1738,4 +1738,166 @@ ul {
   margin-bottom: 18px;
   text-align: center;
   color: #5c5c5c;
+}
+
+.modal-sub-mail-label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #5c5c5c;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-sub-mail-label {
+    margin-bottom: 28px;
+  }
+}
+.modal-sub-mail-field {
+  width: 100%;
+  height: 35px;
+  padding-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+}
+
+.modal-sub-mail-field:focus {
+  border-color: rgba(17, 17, 17, 0.7);
+}
+
+.modal-sub-mail-field::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-sub-mail-field::-moz-placeholder {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-sub-mail-field:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-sub-mail-field::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-sub-mail-field::placeholder {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-sub__button {
+  border-radius: 8px;
+  padding: 8px 74px;
+  width: 236px;
+  height: 37px;
+  background-color: #e86f54;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .modal-sub__button {
+    padding: 15px 126px;
+    width: 336px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+.modal-sub-mail-field:not(:-moz-placeholder-shown):required:valid {
+  border-color: #3cbc81;
+}
+
+.modal-sub-mail-field:not(:-ms-input-placeholder):required:valid {
+  border-color: #3cbc81;
+}
+
+.modal-sub-mail-field:not(:placeholder-shown):required:valid {
+  border-color: #3cbc81;
+}
+
+.modal-sub-mail-field:not(:-moz-placeholder-shown):required:invalid {
+  border-color: #e74a3b;
+}
+
+.modal-sub-mail-field:not(:-ms-input-placeholder):required:invalid {
+  border-color: #e74a3b;
+}
+
+.modal-sub-mail-field:not(:placeholder-shown):required:invalid {
+  border-color: #e74a3b;
+}
+
+.modal-sub-mail-field:not(:-moz-placeholder-shown):required:valid + svg {
+  opacity: 1;
+}
+
+.modal-sub-mail-field:not(:-ms-input-placeholder):required:valid + svg {
+  opacity: 1;
+}
+
+.modal-sub-mail-field:not(:placeholder-shown):required:valid + svg {
+  opacity: 1;
+}
+
+.modal-sub-mail-field:not(:-moz-placeholder-shown):required:invalid + svg + svg {
+  opacity: 1;
+}
+
+.modal-sub-mail-field:not(:-ms-input-placeholder):required:invalid + svg + svg {
+  opacity: 1;
+}
+
+.modal-sub-mail-field:not(:placeholder-shown):required:invalid + svg + svg {
+  opacity: 1;
+}
+
+.modal-icon-invalid-sub {
+  opacity: 0;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 16px;
+  bottom: 54px;
+  fill: #e74a3b;
+}
+
+.modal-icon-valid-sub {
+  opacity: 0;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 16px;
+  bottom: 54px;
+  fill: #3cbc81;
 }/*# sourceMappingURL=main.css.map */
