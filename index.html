@@ -34,6 +34,11 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <div id="scrollToTop">
+      <svg class="scroll-up" width="60" height="60">
+        <use href="./images/icons.svg#icon-circle-chevron-up-solid"></use>
+      </svg>
+    </div>
     <!--Header-->
     <header class="header">
       <div class="container">
@@ -73,7 +78,7 @@
             </svg>
           </button>
         </div>
-        
+
         <!--Mobile menu-->
         <div class="mobile-menu is-hidden js-menu-container">
           <div class="mobile-menu__container">
@@ -115,7 +120,6 @@
         </div>
       </div>
       <!--Scroll-up-->
-       
     </header>
     <main>
       <!--Hero-->
@@ -608,13 +612,12 @@
         <img
           class="modal-img"
           srcset="
-            ./images/blog-modal/blog-modal-mob@1x.jpg 272w,
-            ./images/blog-modal/blog-modal-mob@1x.jpg 544w,
-            ./images/blog-modal/blog-modal-desktop@1x.jpg 428w,
-            ./images/blog-modal/blog-modal-desktop@2x.jpg 856w,
-            ./images/blog-modal/blog-modal-tablet@1x.jpg 588w,
-            ./images/blog-modal/blog-modal-tablet@2x.jpg 1176w
-           
+            ./images/blog-modal/blog-modal-mob@1x.jpg      272w,
+            ./images/blog-modal/blog-modal-mob@1x.jpg      544w,
+            ./images/blog-modal/blog-modal-desktop@1x.jpg  428w,
+            ./images/blog-modal/blog-modal-desktop@2x.jpg  856w,
+            ./images/blog-modal/blog-modal-tablet@1x.jpg   588w,
+            ./images/blog-modal/blog-modal-tablet@2x.jpg  1176w
           "
           sizes="(min-width: 1280px) 428px, (min-width: 768px) 588px, (min-width: 320px) 272px"
           alt="flowers"
@@ -643,15 +646,15 @@
               <svg class="modal-icon-invalid-sub">
                 <use href="./images/icons.svg#icon-Error-logo"></use>
               </svg>
-            </label> 
-            <button class="modal-sub__button" type="submit" >Subscribe</button> 
+            </label>
+            <button class="modal-sub__button" type="submit">Subscribe</button>
           </form>
         </div>
       </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal-order.js"></script>
-    
+    <script src="./js/scrollup.js"></script>
     <script src="./js/slick.js" type="module"></script>
 
     <script
