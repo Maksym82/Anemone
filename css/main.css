@@ -1635,12 +1635,11 @@ ul {
   display: none;
   cursor: pointer;
   z-index: 15;
-  background-color: rgba(205, 211, 221, 0.5);
   border-radius: 8px;
 }
 
 .scroll-up {
-  fill: #ffffff;
+  fill: #e86f54;
 }
 
 .backdrop-sub {
