@@ -5,9 +5,11 @@
     display: none;
     cursor: pointer;
     z-index: 15;
-    opacity: 0.4;
+    background-color: rgba(205, 211, 221, 0.5);
+    border-radius: 8px;
 }
 
+
 .scroll-up {
-    stroke: $colorPink;
+    fill: $colorWhite;
 }
