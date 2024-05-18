@@ -44,6 +44,9 @@
   }
 
   &__text {
+    font-weight: 400;
+    font-size: 16px;
+    color: $colorMain;
     margin-bottom: 0;
 
     @media screen and (min-width: 768px) {
