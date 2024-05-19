@@ -1495,8 +1495,7 @@ ul {
     max-width: 1280px;
   }
 }
-
-.slick__list {
+.blog .slick__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1505,19 +1504,17 @@ ul {
   margin: 0 auto;
   padding-bottom: 68px;
 }
-
-.slick__item {
+.blog .slick__item {
   margin-left: 8px;
   margin-right: 8px;
 }
-
 @media screen and (min-width: 768px) {
-  .slick__item {
+  .blog .slick__item {
     margin-left: 16px;
     margin-right: 16px;
   }
 }
-.slick__box {
+.blog .slick__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1531,21 +1528,20 @@ ul {
   height: 181px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 768px) {
-  .slick__box {
+  .blog .slick__box {
     width: 344px;
     height: 398px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .slick__box {
+  .blog .slick__box {
     width: 390px;
     height: 421px;
   }
 }
-.my-slick-prev,
-.my-slick-next {
+.blog .my-slick-prev,
+.blog .my-slick-next {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1566,56 +1562,51 @@ ul {
   border: none;
   background-color: transparent;
 }
-
-.my-slick-prev {
+.blog .my-slick-prev {
   width: 67px;
   height: 67px;
   bottom: 0px;
   left: 25%;
 }
-
 @media screen and (min-width: 768px) {
-  .my-slick-prev {
+  .blog .my-slick-prev {
     bottom: 0px;
     left: 35%;
   }
 }
 @media screen and (min-width: 1280px) {
-  .my-slick-prev {
+  .blog .my-slick-prev {
     left: 40%;
   }
 }
-.my-slick-next {
+.blog .my-slick-next {
   width: 67px;
   height: 67px;
   bottom: 0px;
   right: 25%;
 }
-
 @media screen and (min-width: 768px) {
-  .my-slick-next {
+  .blog .my-slick-next {
     right: 35%;
   }
 }
 @media screen and (min-width: 1280px) {
-  .my-slick-next {
+  .blog .my-slick-next {
     right: 40%;
   }
 }
-.slick_arrow {
+.blog .slick_arrow {
   width: 67px;
   height: 67px;
 }
-
-.blog__text {
+.blog .blog__text {
   font-weight: 500;
   font-size: 18px;
   text-align: center;
   margin-bottom: 24px;
   color: #000000;
 }
-
-.blog__button {
+.blog .blog__button {
   display: block;
   margin: 0 auto;
   padding: 0;
