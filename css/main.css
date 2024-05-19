@@ -920,7 +920,6 @@ ul {
     max-width: 1280px;
   }
 }
-
 .delivery__title {
   margin-bottom: 32px;
 }
@@ -935,7 +934,6 @@ ul {
     margin-bottom: 80px;
   }
 }
-
 .delivery__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -967,7 +965,6 @@ ul {
     width: 1000px;
   }
 }
-
 .delivery__item:last-child {
   margin-bottom: 26px;
 }
@@ -981,7 +978,6 @@ ul {
     margin-bottom: 60px;
   }
 }
-
 .delivery__span {
   font-weight: 500;
   font-size: 20px;
@@ -1007,7 +1003,6 @@ ul {
     font-size: 26px;
   }
 }
-
 .delivery__text {
   font-weight: 500;
   font-size: 14px;
