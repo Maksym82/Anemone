@@ -1647,19 +1647,16 @@ ul {
   -webkit-transition: opacity 500ms, visibility 500ms;
   transition: opacity 500ms, visibility 500ms;
 }
-
 .backdrop-sub.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-
 .backdrop-sub.is-hidden .modal-sub {
   -webkit-transform: scale(0);
           transform: scale(0);
 }
-
-.modal-sub {
+.backdrop-sub .modal-sub {
   position: relative;
   overflow: auto;
   max-width: 272px;
@@ -1668,14 +1665,14 @@ ul {
   background-color: #ffffff;
 }
 @media screen and (min-width: 768px) {
-  .modal-sub {
+  .backdrop-sub .modal-sub {
     max-width: 588px;
     min-height: 644px;
     padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .modal-sub {
+  .backdrop-sub .modal-sub {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1684,40 +1681,37 @@ ul {
     padding-bottom: 0;
   }
 }
-
-.modal-container {
+.backdrop-sub .modal-container {
   padding: 0 16px;
 }
 @media screen and (min-width: 768px) {
-  .modal-container {
+  .backdrop-sub .modal-container {
     padding: 0 118px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .modal-container {
+  .backdrop-sub .modal-container {
     padding: 112px 40px;
     max-width: 432px;
   }
 }
-
-.modal-img {
+.backdrop-sub .modal-img {
   width: 100%;
   height: auto;
   margin-bottom: 18px;
 }
 @media screen and (min-width: 768px) {
-  .modal-img {
+  .backdrop-sub .modal-img {
     margin-bottom: 28px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .modal-img {
+  .backdrop-sub .modal-img {
     max-width: 428px;
     margin-bottom: 0;
   }
 }
-
-.modal__title {
+.backdrop-sub .modal__title {
   font-weight: 600;
   font-size: 19px;
   margin-bottom: 14px;
@@ -1725,13 +1719,12 @@ ul {
   color: #000000;
 }
 @media screen and (min-width: 768px) {
-  .modal__title {
+  .backdrop-sub .modal__title {
     font-size: 28px;
     margin-bottom: 24px;
   }
 }
-
-.modal__text {
+.backdrop-sub .modal__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 130%;
@@ -1741,14 +1734,13 @@ ul {
   color: #5c5c5c;
 }
 @media screen and (min-width: 768px) {
-  .modal__text {
+  .backdrop-sub .modal__text {
     font-size: 16px;
     width: 336px;
     margin-bottom: 32px;
   }
 }
-
-.modal-sub-mail-label {
+.backdrop-sub .modal-sub-mail-label {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1764,14 +1756,13 @@ ul {
   line-height: 1.2;
   color: #5c5c5c;
 }
-
 @media screen and (min-width: 768px) {
-  .modal-sub-mail-label {
+  .backdrop-sub .modal-sub-mail-label {
     font-size: 14px;
     margin-bottom: 28px;
   }
 }
-.modal-sub-mail-field {
+.backdrop-sub .modal-sub-mail-field {
   width: 100%;
   height: 35px;
   padding-left: 12px;
@@ -1784,7 +1775,7 @@ ul {
   font-size: 12px;
 }
 @media screen and (min-width: 768px) {
-  .modal-sub-mail-field {
+  .backdrop-sub .modal-sub-mail-field {
     width: 336px;
     height: 49px;
     padding-top: 16px;
@@ -1792,64 +1783,57 @@ ul {
     font-size: 14px;
   }
 }
-
-.modal-sub-mail-field:focus {
+.backdrop-sub .modal-sub-mail-field:focus {
   border-color: rgba(17, 17, 17, 0.7);
 }
-
-.modal-sub-mail-field::-webkit-input-placeholder {
+.backdrop-sub .modal-sub-mail-field::-webkit-input-placeholder {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
   color: rgba(0, 0, 0, 0.3);
 }
-
-.modal-sub-mail-field::-moz-placeholder {
+.backdrop-sub .modal-sub-mail-field::-moz-placeholder {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
   color: rgba(0, 0, 0, 0.3);
 }
-
-.modal-sub-mail-field:-ms-input-placeholder {
+.backdrop-sub .modal-sub-mail-field:-ms-input-placeholder {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
   color: rgba(0, 0, 0, 0.3);
 }
-
-.modal-sub-mail-field::-ms-input-placeholder {
+.backdrop-sub .modal-sub-mail-field::-ms-input-placeholder {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
   color: rgba(0, 0, 0, 0.3);
 }
-
-.modal-sub-mail-field::placeholder {
+.backdrop-sub .modal-sub-mail-field::placeholder {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
   color: rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 768px) {
-  .modal-sub-mail-field::-webkit-input-placeholder {
+  .backdrop-sub .modal-sub-mail-field::-webkit-input-placeholder {
     font-size: 14px;
   }
-  .modal-sub-mail-field::-moz-placeholder {
+  .backdrop-sub .modal-sub-mail-field::-moz-placeholder {
     font-size: 14px;
   }
-  .modal-sub-mail-field:-ms-input-placeholder {
+  .backdrop-sub .modal-sub-mail-field:-ms-input-placeholder {
     font-size: 14px;
   }
-  .modal-sub-mail-field::-ms-input-placeholder {
+  .backdrop-sub .modal-sub-mail-field::-ms-input-placeholder {
     font-size: 14px;
   }
-  .modal-sub-mail-field::placeholder {
+  .backdrop-sub .modal-sub-mail-field::placeholder {
     font-size: 14px;
   }
 }
-
-.modal-sub__button {
+.backdrop-sub .modal-sub__button {
   border-radius: 8px;
   padding: 8px 74px;
   width: 236px;
@@ -1863,63 +1847,50 @@ ul {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .modal-sub__button {
+  .backdrop-sub .modal-sub__button {
     padding: 14px 122px;
     width: 336px;
     height: 50px;
     font-size: 18px;
   }
 }
-
-.modal-sub-mail-field:not(:-moz-placeholder-shown):required:valid {
+.backdrop-sub .modal-sub-mail-field:not(:-moz-placeholder-shown):required:valid {
   border-color: #3cbc81;
 }
-
-.modal-sub-mail-field:not(:-ms-input-placeholder):required:valid {
+.backdrop-sub .modal-sub-mail-field:not(:-ms-input-placeholder):required:valid {
   border-color: #3cbc81;
 }
-
-.modal-sub-mail-field:not(:placeholder-shown):required:valid {
+.backdrop-sub .modal-sub-mail-field:not(:placeholder-shown):required:valid {
   border-color: #3cbc81;
 }
-
-.modal-sub-mail-field:not(:-moz-placeholder-shown):required:invalid {
+.backdrop-sub .modal-sub-mail-field:not(:-moz-placeholder-shown):required:invalid {
   border-color: #e74a3b;
 }
-
-.modal-sub-mail-field:not(:-ms-input-placeholder):required:invalid {
+.backdrop-sub .modal-sub-mail-field:not(:-ms-input-placeholder):required:invalid {
   border-color: #e74a3b;
 }
-
-.modal-sub-mail-field:not(:placeholder-shown):required:invalid {
+.backdrop-sub .modal-sub-mail-field:not(:placeholder-shown):required:invalid {
   border-color: #e74a3b;
 }
-
-.modal-sub-mail-field:not(:-moz-placeholder-shown):required:valid + svg {
+.backdrop-sub .modal-sub-mail-field:not(:-moz-placeholder-shown):required:valid + svg {
   opacity: 1;
 }
-
-.modal-sub-mail-field:not(:-ms-input-placeholder):required:valid + svg {
+.backdrop-sub .modal-sub-mail-field:not(:-ms-input-placeholder):required:valid + svg {
   opacity: 1;
 }
-
-.modal-sub-mail-field:not(:placeholder-shown):required:valid + svg {
+.backdrop-sub .modal-sub-mail-field:not(:placeholder-shown):required:valid + svg {
   opacity: 1;
 }
-
-.modal-sub-mail-field:not(:-moz-placeholder-shown):required:invalid + svg + svg {
+.backdrop-sub .modal-sub-mail-field:not(:-moz-placeholder-shown):required:invalid + svg + svg {
   opacity: 1;
 }
-
-.modal-sub-mail-field:not(:-ms-input-placeholder):required:invalid + svg + svg {
+.backdrop-sub .modal-sub-mail-field:not(:-ms-input-placeholder):required:invalid + svg + svg {
   opacity: 1;
 }
-
-.modal-sub-mail-field:not(:placeholder-shown):required:invalid + svg + svg {
+.backdrop-sub .modal-sub-mail-field:not(:placeholder-shown):required:invalid + svg + svg {
   opacity: 1;
 }
-
-.modal-icon-invalid-sub {
+.backdrop-sub .modal-icon-invalid-sub {
   opacity: 0;
   width: 16px;
   height: 16px;
@@ -1929,13 +1900,12 @@ ul {
   fill: #e74a3b;
 }
 @media screen and (min-width: 768px) {
-  .modal-icon-invalid-sub {
+  .backdrop-sub .modal-icon-invalid-sub {
     right: 26px;
     bottom: 16px;
   }
 }
-
-.modal-icon-valid-sub {
+.backdrop-sub .modal-icon-valid-sub {
   opacity: 0;
   width: 16px;
   height: 16px;
@@ -1945,7 +1915,7 @@ ul {
   fill: #3cbc81;
 }
 @media screen and (min-width: 768px) {
-  .modal-icon-valid-sub {
+  .backdrop-sub .modal-icon-valid-sub {
     right: 26px;
     bottom: 16px;
   }
