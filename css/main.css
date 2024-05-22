@@ -1137,6 +1137,30 @@ ul {
     padding: 48px 32px;
   }
 }
+.backdrop-order .modal-order__title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .backdrop-order .modal-order__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
+.backdrop-order .modal-order__text {
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 18px;
+  color: #5c5c5c;
+}
+@media screen and (min-width: 768px) {
+  .backdrop-order .modal-order__text {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+}
 .backdrop-order .modal-order__close {
   position: absolute;
   top: 16px;
@@ -1160,30 +1184,6 @@ ul {
   .backdrop-order .modal-order__close {
     top: 24px;
     right: 24px;
-  }
-}
-.backdrop-order .modal-order__title {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 14px;
-  color: #000000;
-}
-@media screen and (min-width: 768px) {
-  .backdrop-order .modal-order__title {
-    font-size: 32px;
-    margin-bottom: 24px;
-  }
-}
-.backdrop-order .modal-order__text {
-  font-weight: 500;
-  font-size: 12px;
-  margin-bottom: 18px;
-  color: #5c5c5c;
-}
-@media screen and (min-width: 768px) {
-  .backdrop-order .modal-order__text {
-    font-size: 16px;
-    margin-bottom: 32px;
   }
 }
 .backdrop-order .modal-close {
@@ -1646,6 +1646,42 @@ ul {
     max-width: 860px;
     min-height: 528px;
     padding-bottom: 0;
+  }
+}
+.backdrop-sub .modal-order__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .backdrop-sub .modal-order__close {
+    top: 24px;
+    right: 24px;
+  }
+}
+.backdrop-sub .modal-close {
+  width: 18px;
+  height: 18px;
+  stroke: #000000;
+}
+@media screen and (min-width: 768px) {
+  .backdrop-sub .modal-close {
+    width: 24px;
+    height: 24px;
   }
 }
 .backdrop-sub .modal-container {

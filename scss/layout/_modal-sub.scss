@@ -44,6 +44,36 @@
     }
   }
 
+  .modal-order__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      top: 24px;
+      right: 24px;
+    }
+  }
+
+  .modal-close {
+    width: 18px;
+    height: 18px;
+    stroke: $colorMain;
+
+    @media screen and (min-width: 768px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   .modal-container {
     padding: 0 16px;
 
