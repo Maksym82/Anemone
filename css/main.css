@@ -1652,6 +1652,26 @@ ul {
     right: 167px;
   }
 }
+@media (min-width: 1101px) and (max-width: 1150px) {
+  #scrollToTop {
+    right: 190px;
+  }
+}
+@media (min-width: 1151px) and (max-width: 1200px) {
+  #scrollToTop {
+    right: 217px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1250px) {
+  #scrollToTop {
+    right: 240px;
+  }
+}
+@media (min-width: 1251px) and (max-width: 1280px) {
+  #scrollToTop {
+    right: 20px;
+  }
+}
 
 .scroll-up {
   fill: #e86f54;
