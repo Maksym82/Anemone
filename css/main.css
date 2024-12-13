@@ -1587,6 +1587,36 @@ ul {
   z-index: 5;
   opacity: 0.4;
 }
+@media (min-width: 425px) and (max-width: 500px) {
+  #scrollToTop {
+    right: 42px;
+  }
+}
+@media (min-width: 501px) and (max-width: 550px) {
+  #scrollToTop {
+    right: 80px;
+  }
+}
+@media (min-width: 551px) and (max-width: 600px) {
+  #scrollToTop {
+    right: 100px;
+  }
+}
+@media (min-width: 601px) and (max-width: 650px) {
+  #scrollToTop {
+    right: 130px;
+  }
+}
+@media (min-width: 651px) and (max-width: 700px) {
+  #scrollToTop {
+    right: 150px;
+  }
+}
+@media (min-width: 701px) and (max-width: 767px) {
+  #scrollToTop {
+    right: 200px;
+  }
+}
 
 .scroll-up {
   fill: #e86f54;

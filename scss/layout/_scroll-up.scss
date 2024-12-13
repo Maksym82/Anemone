@@ -6,7 +6,28 @@
     cursor: pointer;
     z-index: 5;
     opacity: 0.4;
+
+    @media (min-width: 425px) and (max-width: 500px) {
+        right: 42px;
+    }
+    @media (min-width: 501px) and (max-width: 550px) {
+        right: 80px;
+    }
+    @media (min-width: 551px) and (max-width: 600px) {
+        right: 100px;
+    }
+    @media (min-width: 601px) and (max-width: 650px) {
+        right: 130px;
+    }
+    @media (min-width: 651px) and (max-width: 700px) {
+        right: 150px;
+    }
+    @media (min-width: 701px) and (max-width: 767px) {
+        right: 200px;
+    }
 }
+
+
 
 
 .scroll-up {
