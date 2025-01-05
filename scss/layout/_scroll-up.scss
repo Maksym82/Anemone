@@ -1,62 +1,32 @@
 #scrollToTop {
     position: fixed;
     bottom: 40px;
-    right: 20px;
+    left: 74%;
     display: none;
     cursor: pointer;
     z-index: 5;
     opacity: 0.4;
 
-    @media (min-width: 425px) and (max-width: 500px) {
-        right: 42px;
+    @media (min-width: 425px) {
+        left: 69%;
     }
-    @media (min-width: 501px) and (max-width: 550px) {
-        right: 80px;
+    @media (min-width: 510px) {
+        left: 65%;
     }
-    @media (min-width: 551px) and (max-width: 600px) {
-        right: 100px;
+    @media (min-width: 650px) {
+        left: 61%;
     }
-    @media (min-width: 601px) and (max-width: 650px) {
-        right: 130px;
+    @media (min-width: 768px) {
+        left: 80%;
     }
-    @media (min-width: 651px) and (max-width: 700px) {
-        right: 150px;
+    @media (min-width: 1060px) {
+        left: 72%;
     }
-    @media (min-width: 701px) and (max-width: 767px) {
-        right: 200px;
+    @media (min-width: 1280px) {
+        left: 86%;
     }
-    @media (min-width: 768px) and (max-width: 800px) {
-        right: 20px;
-    }
-    @media (min-width: 801px) and (max-width: 850px) {
-        right: 50px;
-    }
-    @media (min-width: 851px) and (max-width: 900px) {
-        right: 75px;
-    }
-    @media (min-width: 901px) and (max-width: 950px) {
-        right: 90px;
-    }
-    @media (min-width: 951px) and (max-width: 1000px) {
-        right: 115px;
-    }
-    @media (min-width: 1001px) and (max-width: 1050px) {
-        right: 142px;
-    }
-    @media (min-width: 1051px) and (max-width: 1100px) {
-        right: 167px;
-    }
-    @media (min-width: 1101px) and (max-width: 1150px) {
-        right: 190px;
-    }
-    @media (min-width: 1151px) and (max-width: 1200px) {
-        right: 217px;
-    }
-    @media (min-width: 1201px) and (max-width: 1250px) {
-        right: 240px;
-    }
-    @media (min-width: 1251px) and (max-width: 1280px) {
-        right: 20px;
+    @media (min-width: 1600px) {
+        left: 78%;
     }
 }
 
