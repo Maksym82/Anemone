@@ -145,6 +145,14 @@ ul {
     font-size: 20px;
     color: #000000;
     text-decoration: none;
+    -webkit-transition: color 0.25s linear;
+    transition: color 0.25s linear;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .header .nav .nav__link:hover, .header .nav .nav__link:focus {
+    color: #e86f54;
+    text-decoration: underline;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1280px) {

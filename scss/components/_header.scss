@@ -66,7 +66,18 @@
         font-size: 20px;
         color: $colorMain;
         text-decoration: none;
-        
+        transition: color 0.25s linear;
+
+      
+
+        @media screen and (min-width: 768px) {
+          &:hover,
+          &:focus {
+            color: $colorPink;
+            text-decoration: underline;
+          }
+        }
+
         @media screen and (min-width: 1280px) {
           animation: move-vertical 1000ms ease-out 1000ms both;
         }
@@ -124,3 +135,5 @@
     fill: $colorMain;
   }
 }
+
+
