@@ -593,6 +593,9 @@ ul {
   color: #ffffff;
   text-decoration: none;
 }
+.footer__nav-link:hover, .footer__nav-link:focus {
+  text-decoration: underline;
+}
 @media screen and (min-width: 768px) {
   .footer__nav-link {
     font-size: 16px;
