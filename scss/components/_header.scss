@@ -63,25 +63,47 @@
       }
 
       .nav__link {
+        position: relative;
         font-size: 20px;
         color: $colorMain;
         text-decoration: none;
         transition: color 0.25s linear;
 
-      
-
-        @media screen and (min-width: 768px) {
-          &:hover,
-          &:focus {
-            color: $colorPink;
-            text-decoration: underline;
-          }
+        &:hover,
+        &:focus {
+          color: $colorPink;
         }
 
         @media screen and (min-width: 1280px) {
           animation: move-vertical 1000ms ease-out 1000ms both;
         }
       }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .nav__link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: $colorPink;
+      border-radius: 5px 5px 0px 0px;
+      transform: scaleX(0);
+      transition: transform 350ms linear;
+
+      @media screen and (min-width: 1280px) {
+        background-color: $colorWhite;
+      }
+    }
+
+    .nav__link:hover::after,
+    .nav__link:focus::after {
+      transform: scaleX(1);
+      transition: transform 350ms linear;
     }
   }
 
@@ -135,5 +157,3 @@
     fill: $colorMain;
   }
 }
-
-

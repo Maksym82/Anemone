@@ -142,23 +142,56 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .header .nav .nav__link {
+    position: relative;
     font-size: 20px;
     color: #000000;
     text-decoration: none;
     -webkit-transition: color 0.25s linear;
     transition: color 0.25s linear;
   }
-}
-@media screen and (min-width: 768px) and (min-width: 768px) {
   .header .nav .nav__link:hover, .header .nav .nav__link:focus {
     color: #e86f54;
-    text-decoration: underline;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1280px) {
   .header .nav .nav__link {
     -webkit-animation: move-vertical 1000ms ease-out 1000ms both;
             animation: move-vertical 1000ms ease-out 1000ms both;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header .nav__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #e86f54;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 350ms linear;
+    transition: -webkit-transform 350ms linear;
+    transition: transform 350ms linear;
+    transition: transform 350ms linear, -webkit-transform 350ms linear;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1280px) {
+  .header .nav__link::after {
+    background-color: #ffffff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header .nav__link:hover::after,
+  .header .nav__link:focus::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transition: -webkit-transform 350ms linear;
+    transition: -webkit-transform 350ms linear;
+    transition: transform 350ms linear;
+    transition: transform 350ms linear, -webkit-transform 350ms linear;
   }
 }
 .header__tel {
