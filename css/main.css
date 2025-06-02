@@ -648,6 +648,9 @@ ul {
   text-decoration: none;
   color: #ffffff;
 }
+.footer .address__link:hover, .footer .address__link:focus {
+  text-decoration: underline;
+}
 @media screen and (min-width: 768px) {
   .footer .address__link {
     font-size: 16px;
@@ -714,6 +717,11 @@ ul {
   width: 28px;
   height: 28px;
   stroke: #ffffff;
+  -webkit-transition: fill 0.25s linear;
+  transition: fill 0.25s linear;
+}
+.footer__soc-link:hover, .footer__soc-link:focus {
+  fill: #e86f54;
 }
 
 /* Layout */

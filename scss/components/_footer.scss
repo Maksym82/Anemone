@@ -128,6 +128,11 @@
     text-decoration: none;
     color: $colorWhite;
 
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+
     @media screen and (min-width: 768px) {
       font-size: 16px;
     }
@@ -172,5 +177,11 @@
     width: 28px;
     height: 28px;
     stroke: $colorWhite;
+    transition: fill 0.25s linear;
+  }
+
+  &__soc-link:hover,
+  &__soc-link:focus {
+    fill: $colorPink;
   }
 }
