@@ -33,4 +33,10 @@
 
 .scroll-up {
     fill: $colorPink;
+    transition: fill 0.25s linear;
+
+    &:hover,
+    &:focus {
+        fill: #bb3216;
+    }
 }

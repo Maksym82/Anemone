@@ -208,6 +208,9 @@ ul {
   margin-right: 14px;
   cursor: pointer;
 }
+.header__tel:hover, .header__tel:focus {
+  stroke: #e86f54;
+}
 @media screen and (min-width: 768px) {
   .header__tel {
     margin-right: 0;
@@ -1677,6 +1680,11 @@ ul {
 
 .scroll-up {
   fill: #e86f54;
+  -webkit-transition: fill 0.25s linear;
+  transition: fill 0.25s linear;
+}
+.scroll-up:hover, .scroll-up:focus {
+  fill: #bb3216;
 }
 
 .backdrop-sub {

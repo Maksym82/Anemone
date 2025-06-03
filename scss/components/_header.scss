@@ -115,6 +115,11 @@
     margin-right: 14px;
     cursor: pointer;
 
+    &:hover,
+    &:focus {
+      stroke: $colorPink;
+    }
+
     @media screen and (min-width: 768px) {
       margin-right: 0;
     }
