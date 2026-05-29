@@ -1,4 +1,19 @@
-/* Base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a,
+*::before,
+*::after {
+  display: inline-block;
+}
+
+
 html {
   scroll-behavior: smooth;
 }

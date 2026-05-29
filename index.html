@@ -46,7 +46,7 @@
     <header class="header">
       <div class="container">
         <div class="header__container">
-          <a class="header__logo" href="index.html">
+          <a class="header__logo" href="index.html" aria-label="logo Anemone">
             <svg class="header__logo-icon">
               <use href="./images/icons.svg#icon-Logo"></use>
             </svg>
@@ -70,12 +70,12 @@
               </li>
             </ul>
           </nav>
-          <a class="header__tel" href="#">
+          <a class="header__tel" href="#" aria-label="icon phone">
             <svg class="header__tel-icon">
               <use href="./images/icons.svg#icon-tel"></use>
             </svg>
           </a>
-          <button class="burger__menu-open js-open-menu" type="button">
+          <button class="burger__menu-open js-open-menu" type="button" aria-label="icon open mobile menu">
             <svg class="burger__icon-open">
               <use href="./images/icons.svg#icon-Burger"></use>
             </svg>
@@ -85,7 +85,7 @@
         <!--Mobile menu-->
         <div class="mobile-menu is-hidden js-menu-container">
           <div class="mobile-menu__container">
-            <button class="mobile-menu__close js-close-menu" type="button">
+            <button class="mobile-menu__close js-close-menu" type="button" aria-label="icon close mobile menu">
               <svg class="icon-burger-close">
                 <use href="./images/icons.svg#icon-close-menu"></use>
               </svg>
@@ -145,6 +145,7 @@
               type="button"
               data-modal-open-buy
               style="--shift-from-x: 0; --shift-to-x: 25px; --shift-to-y: 170px"
+              aria-label="button open Contact us"
             >
               <svg class="hero__button-icon" width="166" height="166">
                 <use
@@ -172,6 +173,7 @@
                 class="hero__img"
                 src="./images/hero/hero.jpg"
                 alt="red flower"
+                fetchpriority=high
               />
             </picture>
           </div>
@@ -443,7 +445,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__main-block">
-          <a class="footer__logo" href="index.html">
+          <a class="footer__logo" href="index.html" aria-label="logo Anemone">
             <svg class="footer__logo-icon" width="73" height="57">
               <use href="./images/icons.svg#icon-footer-logo"></use>
             </svg>
@@ -502,12 +504,12 @@
               </address>
             </div>
             <div class="footer__social">
-              <a class="footer__soc-link" href="https://m.facebook.com/">
+              <a class="footer__soc-link" href="https://m.facebook.com/" aria-label="icon facebook">
                 <svg class="footer__icon" width="28" height="28">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
-              <a class="footer__soc-link" href="https://www.instagram.com/">
+              <a class="footer__soc-link" href="https://www.instagram.com/" aria-label="icon instagram">
                 <svg class="footer__icon" width="28" height="28">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
