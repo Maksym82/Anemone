@@ -10,27 +10,12 @@
     />
     <!--Favicon-->
     <link rel="shortcut icon" href="./images/favicon.ico" />
-    <!--Slick-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-
+    <!-- Swiper -->
+    <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
+    <!-- Styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--Scroll-up-->
-    <div id="scrollToTop">
-      <svg class="scroll-up" width="60" height="60">
-        <use href="./images/icons.svg#icon-circle-chevron-up-solid"></use>
-      </svg>
-    </div>
     <!--Header-->
     <header class="header">
       <div class="container">
@@ -337,104 +322,140 @@
       <section class="blog" id="blog">
         <div class="container">
           <h2 class="section-title blog__title">Blog</h2>
-          <div class="slick__list responsive slick">
-            <div class="slick__item">
-              <img
-                class="slick__box"
-                srcset="
-                  ./images/blog/blog-1-mobile-136.jpg 136w,
-                  ./images/blog/blog-1-mobile-272.jpg 272w,
-                  ./images/blog/blog-1-tablet-344.jpg 344w,
-                  ./images/blog/blog-1-tablet-688.jpg 688w,
-                  ./images/blog/blog-1-desk-390.jpg   390w,
-                  ./images/blog/blog-1-desk-780.jpg   780w
-                "
-                sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
-                alt="flowers"
-                src="./images/blog/blog-1-desk.jpg"
-              />
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <!-- Image #1 -->
+                <div class="slick__item">
+                  <img
+                    class="slick__box"
+                    srcset="
+                      ./images/blog/blog-1-mobile-136.jpg 136w,
+                      ./images/blog/blog-1-mobile-272.jpg 272w,
+                      ./images/blog/blog-1-tablet-344.jpg 344w,
+                      ./images/blog/blog-1-tablet-688.jpg 688w,
+                      ./images/blog/blog-1-desk-390.jpg   390w,
+                      ./images/blog/blog-1-desk-780.jpg   780w
+                    "
+                    sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
+                    alt="flowers"
+                    src="./images/blog/blog-1-desk.jpg"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- Image #2 -->
+                <div class="slick__item">
+                  <img
+                    class="slick__box"
+                    srcset="
+                      ./images/blog/blog-2-mobile-136.jpg 136w,
+                      ./images/blog/blog-2-mobile-272.jpg 272w,
+                      ./images/blog/blog-2-tablet-344.jpg 344w,
+                      ./images/blog/blog-2-tablet-688.jpg 688w,
+                      ./images/blog/blog-2-desk-390.jpg   390w,
+                      ./images/blog/blog-2-desk-780.jpg   780w
+                    "
+                    sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
+                    alt="flowers"
+                    src="./images/blog/blog-2-desk.jpg"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- Image #3 -->
+                <div class="slick__item">
+                  <img
+                    class="slick__box"
+                    srcset="
+                      ./images/blog/blog-3-mobile-136.jpg 136w,
+                      ./images/blog/blog-3-mobile-272.jpg 272w,
+                      ./images/blog/blog-3-tablet-344.jpg 344w,
+                      ./images/blog/blog-3-tablet-688.jpg 688w,
+                      ./images/blog/blog-3-desk-390.jpg   390w,
+                      ./images/blog/blog-3-desk-780.jpg   780w
+                    "
+                    sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
+                    alt="flowers"
+                    src="./images/blog/blog-3-desk.jpg"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- Image #4 -->
+                <div class="slick__item">
+                  <img
+                    class="slick__box"
+                    srcset="
+                      ./images/blog/blog-4-mobile-136.jpg 136w,
+                      ./images/blog/blog-4-mobile-272.jpg 272w,
+                      ./images/blog/blog-4-tablet-344.jpg 344w,
+                      ./images/blog/blog-4-tablet-688.jpg 688w,
+                      ./images/blog/blog-4-desk-390.jpg   390w,
+                      ./images/blog/blog-4-desk-780.jpg   780w
+                    "
+                    sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
+                    alt="flowers"
+                    src="./images/blog/blog-4-desk.jpg"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- Image #5 -->
+                <div class="slick__item">
+                  <img
+                    class="slick__box"
+                    srcset="
+                      ./images/blog/blog-5-mobile-136.jpg 136w,
+                      ./images/blog/blog-5-mobile-272.jpg 272w,
+                      ./images/blog/blog-5-tablet-344.jpg 344w,
+                      ./images/blog/blog-5-tablet-688.jpg 688w,
+                      ./images/blog/blog-5-desk-390.jpg   390w,
+                      ./images/blog/blog-5-desk-780.jpg   780w
+                    "
+                    sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
+                    alt="flowers"
+                    src="./images/blog/blog-5-desk.jpg"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- Image #6 -->
+                <div class="slick__item">
+                  <img
+                    class="slick__box"
+                    srcset="
+                      ./images/blog/blog-6-mobile-136.jpg 136w,
+                      ./images/blog/blog-6-mobile-272.jpg 272w,
+                      ./images/blog/blog-6-tablet-344.jpg 344w,
+                      ./images/blog/blog-6-tablet-688.jpg 688w,
+                      ./images/blog/blog-6-desk-390.jpg   390w,
+                      ./images/blog/blog-6-desk-780.jpg   780w
+                    "
+                    sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
+                    alt="flowers"
+                    src="./images/blog/blog-6-desk.jpg"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="slick__item">
-              <img
-                class="slick__box"
-                srcset="
-                  ./images/blog/blog-2-mobile-136.jpg 136w,
-                  ./images/blog/blog-2-mobile-272.jpg 272w,
-                  ./images/blog/blog-2-tablet-344.jpg 344w,
-                  ./images/blog/blog-2-tablet-688.jpg 688w,
-                  ./images/blog/blog-2-desk-390.jpg   390w,
-                  ./images/blog/blog-2-desk-780.jpg   780w
-                "
-                sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
-                alt="flowers"
-                src="./images/blog/blog-2-desk.jpg"
-              />
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+              <svg>
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
             </div>
-            <div class="slick__item">
-              <img
-                class="slick__box"
-                srcset="
-                  ./images/blog/blog-3-mobile-136.jpg 136w,
-                  ./images/blog/blog-3-mobile-272.jpg 272w,
-                  ./images/blog/blog-3-tablet-344.jpg 344w,
-                  ./images/blog/blog-3-tablet-688.jpg 688w,
-                  ./images/blog/blog-3-desk-390.jpg   390w,
-                  ./images/blog/blog-3-desk-780.jpg   780w
-                "
-                sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
-                alt="flowers"
-                src="./images/blog/blog-3-desk.jpg"
-              />
-            </div>
-            <div class="slick__item">
-              <img
-                class="slick__box"
-                srcset="
-                  ./images/blog/blog-4-mobile-136.jpg 136w,
-                  ./images/blog/blog-4-mobile-272.jpg 272w,
-                  ./images/blog/blog-4-tablet-344.jpg 344w,
-                  ./images/blog/blog-4-tablet-688.jpg 688w,
-                  ./images/blog/blog-4-desk-390.jpg   390w,
-                  ./images/blog/blog-4-desk-780.jpg   780w
-                "
-                sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
-                alt="flowers"
-                src="./images/blog/blog-4-desk.jpg"
-              />
-            </div>
-            <div class="slick__item">
-              <img
-                class="slick__box"
-                srcset="
-                  ./images/blog/blog-5-mobile-136.jpg 136w,
-                  ./images/blog/blog-5-mobile-272.jpg 272w,
-                  ./images/blog/blog-5-tablet-344.jpg 344w,
-                  ./images/blog/blog-5-tablet-688.jpg 688w,
-                  ./images/blog/blog-5-desk-390.jpg   390w,
-                  ./images/blog/blog-5-desk-780.jpg   780w
-                "
-                sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
-                alt="flowers"
-                src="./images/blog/blog-5-desk.jpg"
-              />
-            </div>
-            <div class="slick__item">
-              <img
-                class="slick__box"
-                srcset="
-                  ./images/blog/blog-6-mobile-136.jpg 136w,
-                  ./images/blog/blog-6-mobile-272.jpg 272w,
-                  ./images/blog/blog-6-tablet-344.jpg 344w,
-                  ./images/blog/blog-6-tablet-688.jpg 688w,
-                  ./images/blog/blog-6-desk-390.jpg   390w,
-                  ./images/blog/blog-6-desk-780.jpg   780w
-                "
-                sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
-                alt="flowers"
-                src="./images/blog/blog-6-desk.jpg"
-              />
+            <div class="swiper-button-next">
+              <svg>
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
             </div>
           </div>
+          <div class="slick__list responsive slick"></div>
           <h3 class="blog__text">Follow to our newsletter</h3>
           <button class="blog__button" type="button">Subscribe</button>
         </div>
@@ -665,24 +686,20 @@
         </div>
       </div>
     </div>
+    <!--Scroll-up-->
+    <div id="scrollToTop">
+      <svg class="scroll-up" width="60" height="60">
+        <use href="./images/icons.svg#icon-circle-chevron-up-solid"></use>
+      </svg>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="./libs/swiper-bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal-order.js"></script>
     <script src="./js/scrollup.js"></script>
-    <script src="./js/slick.js" type="module"></script>
-
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </body>
 </html>

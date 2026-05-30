@@ -1706,6 +1706,11 @@ input {
   cursor: pointer;
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
 #scrollToTop {
   position: fixed;
   bottom: 40px;
