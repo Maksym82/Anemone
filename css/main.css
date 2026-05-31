@@ -1579,53 +1579,50 @@ input {
     max-width: 1280px;
   }
 }
-.blog .slick__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  max-width: 2500px;
-  margin: 0 auto;
-  padding-bottom: 68px;
+.blog__title {
+  margin-bottom: 32px;
 }
-.blog .slick__item {
-  margin-left: 8px;
-  margin-right: 8px;
-}
-@media screen and (min-width: 768px) {
-  .blog .slick__item {
-    margin-left: 16px;
-    margin-right: 16px;
+@media (min-width: 768px) {
+  .blog__title {
+    margin-bottom: 60px;
+    font-size: 44px;
   }
 }
-.blog .slick__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media (min-width: 1280px) {
+  .blog__title {
+    margin-bottom: 80px;
+  }
+}
+.blog .blog__image {
   width: 136px;
   height: 181px;
-  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  .blog .slick__box {
+  .blog .blog__image {
     width: 344px;
     height: 398px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .blog .slick__box {
+  .blog .blog__image {
     width: 390px;
     height: 421px;
   }
 }
-.blog .my-slick-prev,
-.blog .my-slick-next {
+.blog .swiper-wrapper {
+  margin-bottom: 68px;
+}
+@media (min-width: 1280px) {
+  .blog .swiper-wrapper {
+    margin-bottom: 103px;
+  }
+}
+.blog .swiper-button-prev::after,
+.blog .swiper-button-next::after {
+  display: none;
+}
+.blog .swiper-button-prev,
+.blog .swiper-button-next {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1645,43 +1642,49 @@ input {
   line-height: 1;
   border: none;
   background-color: transparent;
+  top: auto;
+  -webkit-transform: none;
+          transform: none;
 }
-.blog .my-slick-prev {
+.blog .swiper-button-prev {
   width: 67px;
   height: 67px;
   bottom: 0px;
   left: 25%;
 }
 @media screen and (min-width: 768px) {
-  .blog .my-slick-prev {
+  .blog .swiper-button-prev {
     bottom: 0px;
     left: 35%;
   }
 }
 @media screen and (min-width: 1280px) {
-  .blog .my-slick-prev {
+  .blog .swiper-button-prev {
     left: 40%;
+    bottom: 16px;
   }
 }
-.blog .my-slick-next {
+.blog .swiper-button-next {
   width: 67px;
   height: 67px;
   bottom: 0px;
   right: 25%;
 }
 @media screen and (min-width: 768px) {
-  .blog .my-slick-next {
+  .blog .swiper-button-next {
     right: 35%;
   }
 }
 @media screen and (min-width: 1280px) {
-  .blog .my-slick-next {
+  .blog .swiper-button-next {
     right: 40%;
+    bottom: 16px;
   }
 }
-.blog .slick_arrow {
+.blog .blog__arrow {
   width: 67px;
   height: 67px;
+  fill: #0e0e0e;
 }
 .blog .blog__text {
   font-weight: 500;
@@ -1704,11 +1707,6 @@ input {
   color: #ffffff;
   border: none;
   cursor: pointer;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
 }
 
 #scrollToTop {
