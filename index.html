@@ -243,20 +243,67 @@
           <h2 class="section-title store__title">Store</h2>
           <ul class="store__list">
             <li class="store__item">
-              <img
-                class="store__img"
-                srcset="
-                  ./images/store/bouquet-mobile-1-136.jpg  136w,
-                  ./images/store/bouquet-mobile-1-272.jpg  272w,
-                  ./images/store/bouquet-tablet-1-344.jpg  344w,
-                  ./images/store/bouquet-tablet-1-688.jpg  688w,
-                  ./images/store/bouquet-desk-1-600.jpg    600w,
-                  ./images/store/bouquet-desk-1-1200.jpg  1200w
-                "
-                sizes="(min-width: 1280px) 600px, (min-width: 768px) 344px, (min-width: 320px) 136px"
-                alt="bouquets of flowers"
-                src="./images/store/bouquet-mobile.jpg"
-              />
+              <picture>
+                <!-- Desktop 1280 -->
+                <source
+                  srcset="
+                    ./images/store/image-1/bouquet-desk-1-600.avif  1x,
+                    ./images/store/image-1/bouquet-desk-1-1200.avif 2x
+                  "
+                  type="image/avif"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/store/image-1/bouquet-desk-1-600.webp  1x,
+                    ./images/store/image-1/bouquet-desk-1-1200.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1280px)"
+                />
+                <!-- Tablet 768 -->
+                <source
+                  srcset="
+                    ./images/store/image-1/bouquet-tablet-1-344.avif 1x,
+                    ./images/store/image-1/bouquet-tablet-1-688.avif 2x
+                  "
+                  type="image/avif"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/store/image-1/bouquet-tablet-1-344.webp 1x,
+                    ./images/store/image-1/bouquet-tablet-1-688.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    ./images/store/image-1/bouquet-mobile-1-136.avif 1x,
+                    ./images/store/image-1/bouquet-mobile-1-272.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./images/store/image-1/bouquet-mobile-1-136.webp 1x,
+                    ./images/store/image-1/bouquet-mobile-1-272.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <!-- Fallback JPEG image -->
+                <img
+                  class="store__img"
+                  srcset="
+                    ./images/store/image-1/bouquet-mobile-1-136.jpg 1x,
+                    ./images/store/image-1/bouquet-mobile-1-272.jpg 2x
+                  "
+                  src="./images/store/image-1/bouquet-mobile-1-136.jpg"
+                  alt="bouquets of flowers"
+                />
+              </picture>
               <h3 class="store__card-title">compliments</h3>
               <p class="store__card-price">from $15</p>
             </li>
