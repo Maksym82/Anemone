@@ -174,19 +174,66 @@
               stylish and modern masterpieces. Every bouquet we create is unique
               as you are.
             </p>
-            <img
-              srcset="
-                ./images/about/about-mob-288.jpg     288w,
-                ./images/about/about-mob-576.jpg     576w,
-                ./images/about/about-tablet-344.jpg  344w,
-                ./images/about/about-tablet-688.jpg  688w,
-                ./images/about/about-desk-632.jpg    632w,
-                ./images/about/about-desk-1264.jpg  1264w
-              "
-              sizes="(min-width: 1280px) 632px, (min-width: 768px) 344px, (min-width: 320px) 288px"
-              alt="red flowers"
-              src="./images/about/about-mob.jpg"
-            />
+            <picture>
+              <!-- Desktop 1280 -->
+              <source
+                srcset="
+                  ./images/about/about-desk-632.avif  1x,
+                  ./images/about/about-desk-1264.avif 2x
+                "
+                type="image/avif"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/about/about-desk-632.webp  1x,
+                  ./images/about/about-desk-1264.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 1280px)"
+              />
+              <!-- Tablet 768px -->
+              <source
+                srcset="
+                  ./images/about/about-tablet-344.avif 1x,
+                  ./images/about/about-tablet-688.avif 2x
+                "
+                type="image/avif"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/about/about-tablet-344.webp 1x,
+                  ./images/about/about-tablet-688.webp 2x
+                "
+                type="image/webp"
+                media="(min-width: 768px)"
+              />
+              <!-- Mobile -->
+              <source
+                srcset="
+                  ./images/about/about-mob-288.avif 1x,
+                  ./images/about/about-mob-576.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ./images/about/about-mob-288.webp 1x,
+                  ./images/about/about-mob-576.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- Fallback JPEG image -->
+              <img
+                srcset="
+                  ./images/about/about-mob-288.jpg 1x,
+                  ./images/about/about-mob-576.jpg 2x
+                "
+                src="./images/about/about-mob.jpg"
+                alt="red flowers"
+              />
+            </picture>
           </div>
         </div>
       </section>
