@@ -933,20 +933,67 @@
               </div>
               <!-- Image #6 -->
               <div class="swiper-slide">
-                <img
-                  class="blog__image"
-                  srcset="
-                    ./images/blog/blog-6-mobile-136.jpg 136w,
-                    ./images/blog/blog-6-mobile-272.jpg 272w,
-                    ./images/blog/blog-6-tablet-344.jpg 344w,
-                    ./images/blog/blog-6-tablet-688.jpg 688w,
-                    ./images/blog/blog-6-desk-390.jpg   390w,
-                    ./images/blog/blog-6-desk-780.jpg   780w
-                  "
-                  sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px"
-                  alt="flowers"
-                  src="./images/blog/blog-6-desk.jpg"
-                />
+                <picture>
+                  <!-- Desktop 1280 -->
+                  <source
+                    srcset="
+                      ./images/blog/image-6/blog-6-desk-390.avif 1x,
+                      ./images/blog/image-6/blog-6-desk-780.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/image-6/blog-6-desk-390.webp 1x,
+                      ./images/blog/image-6/blog-6-desk-780.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1280px)"
+                  />
+                  <!-- Tablet 768 -->
+                  <source
+                    srcset="
+                      ./images/blog/image-6/blog-6-tablet-344.avif 1x,
+                      ./images/blog/image-6/blog-6-tablet-688.avif 2x
+                    "
+                    type="image/avif"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/image-6/blog-6-tablet-344.webp 1x,
+                      ./images/blog/image-6/blog-6-tablet-688.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
+                  <!-- Mobile -->
+                  <source
+                    srcset="
+                      ./images/blog/image-6/blog-6-mobile-136.avif 1x,
+                      ./images/blog/image-6/blog-6-mobile-272.avif 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/blog/image-6/blog-6-mobile-136.webp 1x,
+                      ./images/blog/image-6/blog-6-mobile-272.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <!-- Fallback JPEG image -->
+                  <img
+                    class="blog__image"
+                    srcset="
+                      ./images/blog/image-6/blog-6-mobile-136.jpg 1x,
+                      ./images/blog/image-6/blog-6-mobile-272.jpg 2x
+                    "
+                    src="./images/blog/image-6/blog-6-desk.jpg"
+                    alt="flowers"
+                  />
+                </picture>
               </div>
             </div>
 
